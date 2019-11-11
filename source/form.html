@@ -39,7 +39,65 @@
         </div>
       </nav>
     </header>
-    <main class="page-main"></main>
+    <main class="page-main">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+      <p class="page-main__text">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset control-group">
+          <legend class="control-group__title">Тип</legend>
+          <div class="control-group__item radio">
+            <input class="radio__input" id="accessory" type="radio" name="type" value="Аксессуар для интерьера" checked>
+            <label class="radio__label" for="accessory">Аксессуар для интерьера</label>
+            <input class="radio__input" id="toy" type="radio" name="type" value="Детская игрушка">
+            <label class="radio__label" for="toy">Детская игрушка</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset control-group">
+          <legend class="control-group__title">Цвет</legend>
+          <div class="control-group__item checkbox">
+            <input class="checkbox__input" id="white-color" type="checkbox" name="color" value="Белый" checked>
+            <label class="checkbox__label" for="white-color">Белый</label>
+            <input class="checkbox__input" id="gray-color" type="checkbox" name="color" value="Серый" checked>
+            <label class="checkbox__label" for="gray-color">Серый</label>
+            <input class="checkbox__input" id="tiffany-color" type="checkbox" name="color" value="«Тиффани»">
+            <label class="checkbox__label" for="tiffany-color">«Тиффани»</label>
+            <input class="checkbox__input" id="black-color" type="checkbox" name="color" value="Черный">
+            <label class="checkbox__label" for="black-color">Черный</label>
+            <input class="checkbox__input" id="pink-color" type="checkbox" name="color" value="Розовый">
+            <label class="checkbox__label" for="pink-color">Розовый</label>
+            <input class="checkbox__input" id="orange-color" type="checkbox" name="color" value="Оранжевый">
+            <label class="checkbox__label" for="orange-color">Оранжевый</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset control-group">
+          <legend class="control-group__title">ФИО</legend>
+          <div class="control-group__item textfield">
+            <label class="textfield__label" for="first-name">Имя:</label>
+            <input class="textfield__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+            <label class="textfield__label" for="surname">Фамилия:</label>
+            <input class="textfield__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            <label class="textfield__label" for="patronymic">Отчество:</label>
+            <input class="textfield__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+          </div>
+        </fieldset>
+        <div class="form__item">
+          <label class="form__category" for="phone">Тел</label>
+          <input class="form__input" id="phone" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
+        </div>
+        <div class="form__item">
+          <label class="form__category" for="email">E-mail</label>
+          <input class="form__input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+        </div>
+        <div class="form__item">
+          <label class="form__category" for="comment">Доп</label>
+          <textarea class="form__textarea" id="comment" name="comment" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+        <span class="form__legend">*Поля обязательные для заполнения</span>
+        <button class="form__submit button" type="submit">Отправить заказ</button>
+      </form>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
