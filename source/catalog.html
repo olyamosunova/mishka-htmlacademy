@@ -126,11 +126,18 @@
     </footer>
     <div class="add-basket modal">
       <h2 class="modal__title title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <button class="modal__button-size" type="button">S</button>
-      <button class="modal__button-size" type="button">M</button>
-      <button class="modal__button-size" type="button">L</button>
-      <button class="modal__button" type="button">Добавить</button>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__block">
+          <p class="form__text">Выберите размер:</p>
+          <input class="form__field" id="size-s" type="checkbox" name="size" value="S">
+          <label class="form__label" for="size-s">S</label>
+          <input class="form__field" id="size-m" type="checkbox" name="size" value="M">
+          <label class="form__label" for="size-m">M</label>
+          <input class="form__field" id="size-l" type="checkbox" name="size" value="L">
+          <label class="form__label" for="size-l">L</label>
+        </div>
+        <button class="form__button" type="submit">Добавить</button>
+      </form>
     </div>
   </body>
 </html>
