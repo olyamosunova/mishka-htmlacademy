@@ -1,0 +1,15 @@
+.social {
+  padding-top: 30px;
+  padding-right: 62px;
+  padding-bottom: 30px;
+  padding-left: 57px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
