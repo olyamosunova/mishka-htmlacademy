@@ -30,7 +30,6 @@
 .product-week__list {
   width: 260px;
   margin-bottom: 28px;
-
   border-collapse: collapse;
   tr {
     height: 39px;
@@ -59,6 +58,5 @@
 .product-week__order {
   @include button();
   margin-bottom: 36px;
-  
   cursor: pointer;
 }
