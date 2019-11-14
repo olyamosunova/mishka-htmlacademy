@@ -1,20 +1,23 @@
 .advantages {
   padding-left: 30px;
   padding-right: 30px;
-  background-image: url('../../img/bg-zigzag-line.svg');
+  background-image: url("../../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: -5px top;
   background-size: 320px 6px;
 }
+
 .advantages__title {
   @include title();
   padding-bottom: 31px;
 }
+
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .advantages__item {
   width: 251px;
   padding-top: 57px;
@@ -26,22 +29,28 @@
   white-space: pre-line;
   background-repeat: no-repeat;
   background-position: left top;
+
   &--ecology {
-    background-image: url('../../img/icon-feature-flower.svg');
+    background-image: url("../../img/icon-feature-flower.svg");
   }
+
   &--price {
-    background-image: url('../../img/icon-feature-money.svg');
+    background-image: url("../../img/icon-feature-money.svg");
   }
+
   &--like {
-    background-image: url('../../img/icon-feature-heart.svg');
+    background-image: url("../../img/icon-feature-heart.svg");
   }
+
   &--handmade {
-    background-image: url('../../img/icon-feature-ball.svg');
+    background-image: url("../../img/icon-feature-ball.svg");
   }
+
   &--home-product {
-    background-image: url('../../img/icon-feature-rocket.svg');
+    background-image: url("../../img/icon-feature-rocket.svg");
   }
+
   &--present {
-    background-image: url('../../img/icon-feature-gift.svg');
+    background-image: url("../../img/icon-feature-gift.svg");
   }
 }
