@@ -17,9 +17,7 @@
 body {
   width: 322px;
   margin: 0;
-
   @include container();
-
   padding: 0;
 
   font-family: $font-family;
