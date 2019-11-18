@@ -6,16 +6,12 @@
   padding-right: 30px;
 }
 
-.product-week__title {
-  @include title();
-}
-
 .product-week__legend {
   padding-top: 8px;
 
   font-size: 17px;
   line-height: 20px;
-  color: #63d1bb;
+  color: $color-secondary;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
 }
@@ -35,7 +31,7 @@
   tr {
     height: 39px;
 
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid $color-main;
   }
 
   line-height: 20px;
@@ -57,7 +53,6 @@
 }
 
 .product-week__order {
-  @include button();
   margin-bottom: 36px;
   cursor: pointer;
 }

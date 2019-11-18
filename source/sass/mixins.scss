@@ -1,33 +1,4 @@
-@mixin title() {
-  margin: 0;
-  padding-top: 34px;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: $font-weight-bold;
-  color: $font-color-bold;
-  text-align: left;
-}
-
-@mixin container() {
+@mixin container {
   margin-left: auto;
   margin-right: auto;
-}
-
-@mixin button() {
-  width: 259px;
-  min-height: 60px;
-
-  padding-top: 20px;
-  padding-right: 85px;
-  padding-bottom: 20px;
-  padding-left: 85px;
-
-  font-size: 17px;
-  height: 20px;
-  font-weight: $font-weight-bold;
-  color: #444444;
-  text-transform: uppercase;
-
-  border: 2px solid #444444;
-  background-color: inherit;
 }

@@ -1,15 +1,15 @@
 body {
-  width: 322px;
+  width: 320px;
   margin: 0;
 
-  @include container();
+  @include container;
   padding: 0;
 
   font-family: $font-family;
   font-size: 15px;
   line-height: 24px;
   font-weight: $font-weight-normal;
-  color: $font-color-normal;
+  color: $color-main;
 }
 
 img {

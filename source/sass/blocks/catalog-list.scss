@@ -22,15 +22,15 @@
   line-height: 24px;
   font-weight: $font-weight-bold;
   text-align: left;
-  color: #ffffff;
+  color: $white;
 
-  background-color: #63d1bb;
+  background-color: $color-secondary;
 
   &--dark {
     .catalog-list__image {
       right: 27px;
     }
-    background-color: #56c3b2;
+    background-color: $color-secondary-dark;
   }
 }
 
@@ -39,5 +39,5 @@
   bottom: 22px;
   right: 36px;
 
-  fill: #149080;
+  fill: $catalog-icon-color;
 }

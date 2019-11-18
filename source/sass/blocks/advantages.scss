@@ -8,7 +8,6 @@
 }
 
 .advantages__title {
-  @include title();
   padding-bottom: 31px;
 }
 
@@ -25,7 +24,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: $font-weight-bold;
-  color: $font-color-bold;
+  color: $black;
   white-space: pre-line;
   background-repeat: no-repeat;
   background-position: left top;
