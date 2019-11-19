@@ -1,0 +1,20 @@
+.control-group__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+  padding-bottom: 45px;
+
+  color: $black;
+}
+
+.control-group__title {
+  margin: 0;
+  padding: 0;
+  padding-right: 27px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $font-weight-bold;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
