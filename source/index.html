@@ -139,8 +139,8 @@
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title title">Отзывы</h2>
         <div class="reviews__wrapper slider">
+          <h2 class="reviews__title title">Отзывы</h2>
           <ul class="slider__list">
             <li class="slider__item">
               <p class="slider__text">
@@ -153,8 +153,8 @@
             </li>
           </ul>
           <p class="slider__toggles">
-            <button class="slider__toggle" type="button">Предыдущий</button>
-            <button class="slider__toggle slider__toggle--next" type="button">Следующий</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">Предыдущий</span></button>
+            <button class="slider__toggle slider__toggle--next" type="button"><span class="visually-hidden">Следующий</span></button>
           </p>
         </div>
         <a class="reviews__write button" href="#">Написать</a>
@@ -171,13 +171,13 @@
           <tr>
             <td class="contacts__field">адрес:</td>
             <td class="contacts__value">
-              г. Санкт-Петербург,
-              ул. Большая Конюшенная,
+              г. Санкт-Петербург, <br/>
+              ул. Большая Конюшенная, <br/>
               д. 19/8, офис 101
             </td>
           </tr>
         </table>
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA"></iframe>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" width="322" height="457"></iframe>
         <a class="contacts__write button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -232,20 +232,22 @@
         </a>
       </div>
     </footer>
-    <div class="add-basket modal">
-      <h2 class="modal__title title">Добавить в корзину</h2>
-      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__block">
-          <p class="form__text">Выберите размер:</p>
-          <input class="form__field" id="size-s" type="checkbox" name="size" value="S">
-          <label class="form__label" for="size-s">S</label>
-          <input class="form__field" id="size-m" type="checkbox" name="size" value="M">
-          <label class="form__label" for="size-m">M</label>
-          <input class="form__field" id="size-l" type="checkbox" name="size" value="L">
-          <label class="form__label" for="size-l">L</label>
-        </div>
-        <button class="form__button" type="submit">Добавить</button>
-      </form>
+    <div class="add-basket">
+      <div class="add-basket__block modal">
+        <h2 class="modal__title title">Добавить<br/>в корзину</h2>
+        <form class="modal__form form-add" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-add__block">
+            <p class="form-add__text">Выберите размер:</p>
+            <input class="form-add__field visually-hidden" id="size-s" type="checkbox" name="size" value="S" checked>
+            <label class="form-add__label" for="size-s">S</label>
+            <input class="form-add__field visually-hidden" id="size-m" type="checkbox" name="size" value="M">
+            <label class="form-add__label" for="size-m">M</label>
+            <input class="form-add__field visually-hidden" id="size-l" type="checkbox" name="size" value="L">
+            <label class="form-add__label" for="size-l">L</label>
+          </div>
+          <button class="form-add__button button" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
