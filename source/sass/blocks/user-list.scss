@@ -11,13 +11,15 @@
 
 .user-list__link {
   position: relative;
+  padding-left: 77px;
+
   font-size: 17px;
-  color: $black;
   font-weight: $font-weight-bold;
+  color: $black;
 
   svg {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 33px;
   }
 }

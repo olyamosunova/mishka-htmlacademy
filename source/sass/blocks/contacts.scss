@@ -3,9 +3,7 @@
   flex-direction: column;
   padding-top: 41px;
 
-  background-image: url("../../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: -5px top;
+  background: url("../../img/bg-zigzag-line.svg") -5px top repeat-x;
   background-size: 320px 6px;
 }
 
@@ -20,10 +18,7 @@
 }
 
 .contacts__list {
-  padding-top: 23px;
-  padding-right: 30px;
-  padding-bottom: 35px;
-  padding-left: 30px;
+  padding: 23px 30px 35px;
 
   line-height: 30px;
 }

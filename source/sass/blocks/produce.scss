@@ -18,9 +18,7 @@
   color: $black;
   font-size: 17px;
 
-  background-image: url("../../img/icon-video.svg");
-  background-repeat: no-repeat;
-  background-position: 34px 5px;
+  background: url("../../img/icon-video.svg") no-repeat 34px 5px;
 }
 
 .produce__video {
@@ -46,14 +44,11 @@
 
 .produce__order {
   width: 192px;
-  margin-top: 29px;
-  margin-right: 34px;
-  margin-bottom: 33px;
-  margin-left: 34px;
+  margin: 29px 34px 33px;
   padding-right: 21px;
   padding-bottom: 16px;
   padding-left: 21px;
 
   font-size: 17px;
-  line-height: 16px;
+  line-height: 17px;
 }

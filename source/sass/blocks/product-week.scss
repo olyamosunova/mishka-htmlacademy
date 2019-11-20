@@ -1,7 +1,6 @@
 .product-week {
   display: flex;
   flex-direction: column;
-
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -26,6 +25,7 @@
 .product-week__list {
   width: 260px;
   margin-bottom: 28px;
+
   border-collapse: collapse;
 
   tr {
@@ -43,10 +43,7 @@
 }
 
 .product-week__price {
-  padding-top: 29px;
-  padding-right: 69px;
-  padding-bottom: 28px;
-  padding-left: 67px;
+  padding: 29px 69px 28px 67px;
 
   font-size: 17px;
   font-weight: $font-weight-bold;

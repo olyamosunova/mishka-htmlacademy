@@ -7,10 +7,7 @@
 
 .page-main__title {
   margin: 0;
-  padding-top: 76px;
-  padding-right: 39px;
-  padding-bottom: 120px;
-  padding-left: 39px;
+  padding: 76px 39px 120px;
 
   font-size: 27px;
   line-height: 30px;
@@ -21,15 +18,11 @@
   background-color: $gray;
 
   &--index {
-    background-image: url("../../img/hero-mobile@1x.jpg");
-    background-position: center -13px;
+    background: url("../../img/hero-mobile@1x.jpg") center -13px;
   }
 
   &--catalog {
-    padding-top: 71px;
-    padding-right: 43px;
-    padding-bottom: 73px;
-    padding-left: 42px;
+    padding: 71px 41px 73px 42px;
   }
 
   &--form {

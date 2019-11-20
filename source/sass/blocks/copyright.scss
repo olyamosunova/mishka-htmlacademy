@@ -1,19 +1,20 @@
 .copyright {
   display: flex;
   align-items: center;
-
-  padding-top: 3px;
-  padding-right: 35px;
-  padding-bottom: 23px;
-  padding-left: 39px;
+  padding: 3px 35px 23px 39px;
 
   border-top: 1px solid $gray-darken;
 }
 
 .copyright__text {
   padding-right: 30px;
+
   font-size: 19px;
   line-height: 18px;
   font-weight: $font-weight-bold;
   color: $black;
+}
+
+.copyright__link {
+  padding-top: 22px;
 }

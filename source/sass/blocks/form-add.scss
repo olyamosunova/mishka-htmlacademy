@@ -21,7 +21,7 @@
   padding: 12px 34px;
 
   font-size: 17px;
-  line-height: 16px;
+  line-height: 17px;
   font-weight: $font-weight-bold;
 
   border: 2px solid $color-border;
@@ -34,13 +34,16 @@
 }
 
 .form-add__button {
+  margin-top: 15px;
   padding-top: 20px;
   padding-bottom: 16px;
 
   color: $white;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 17px;
 
   background-color: $color-secondary;
   border: none;
+
+  cursor: pointer;
 }

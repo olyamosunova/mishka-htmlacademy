@@ -30,14 +30,10 @@
   padding-top: 34px;
 
   font-size: 17px;
-  line-height: 16px;
+  line-height: 17px;
   font-weight: $font-weight-bold;
   color: $color-secondary;
   text-transform: uppercase;
-
-  &[for="comment"] {
-    padding-bottom: 23px;
-  }
 
   &::after {
     content: "";
@@ -58,15 +54,22 @@
   padding-bottom: 21px;
 
   font-family: $font-family;
-  font-size: 19px;
-  line-height: 18px;
-  color: $color-textfield;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-main;
+
+  &--phone {
+    font-size: 19px;
+    line-height: 19px;
+
+    background: url("../../img/icon-phone.svg") no-repeat 227px center;
+  }
+
+  &--email {
+    background: url("../../img/icon-mail.svg") no-repeat 224px center;
+  }
 
   border: none;
-
-  &[id="email"] {
-    font-size: 17px;
-  }
 
   box-shadow: 0 2px 0 0 $black;
 }
@@ -74,14 +77,25 @@
 .form__textarea {
   width: 260px;
   height: 142px;
+  margin-top: 23px;
   padding-top: 18px;
   padding-left: 17px;
 
   font-family: $font-family;
   font-size: 17px;
   line-height: 18px;
-  color: $color-textfield;
+  color: $color-main;
   border: 2px solid $color-main;
+}
+
+.form__textarea::-webkit-input-placeholder,
+.form__input::-webkit-input-placeholder {
+  color: $color-placeholder;
+}
+
+.form__textarea::-moz-placeholder,
+.form__input::-moz-placeholder {
+  color: $color-placeholder;
 }
 
 .form__legend {
@@ -99,7 +113,7 @@
   padding-left: 45px;
 
   font-size: 17px;
-  line-height: 16px;
+  line-height: 17px;
 
   cursor: pointer;
 }

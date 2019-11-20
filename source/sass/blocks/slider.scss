@@ -32,9 +32,7 @@
   height: 52px;
 
   @include button;
-  background-image: url("../../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../../img/icon-left-arrow.svg") no-repeat center;
   border: 1px solid $color-border;
 
   &--next {
