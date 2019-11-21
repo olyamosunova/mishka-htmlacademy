@@ -88,13 +88,8 @@
   border: 2px solid $color-main;
 }
 
-.form__textarea::-webkit-input-placeholder,
-.form__input::-webkit-input-placeholder {
-  color: $color-placeholder;
-}
-
-.form__textarea::-moz-placeholder,
-.form__input::-moz-placeholder {
+.form__textarea::placeholder,
+.form__input::placeholder {
   color: $color-placeholder;
 }
 

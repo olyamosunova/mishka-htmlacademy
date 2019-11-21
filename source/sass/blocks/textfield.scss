@@ -20,10 +20,6 @@
   border-bottom: 2px solid $black;
 }
 
-.textfield__input::-webkit-input-placeholder {
-  color: $color-placeholder;
-}
-
-.textfield__input::-moz-placeholder {
+.textfield__input::placeholder {
   color: $color-placeholder;
 }
