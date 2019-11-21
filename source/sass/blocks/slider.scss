@@ -1,0 +1,42 @@
+.slider__list {
+  @include list;
+  padding-top: 25px;
+  padding-bottom: 31px;
+}
+
+.slider__text {
+  margin: 0;
+  padding-bottom: 27px;
+
+  line-height: 30px;
+  text-align: left;
+}
+
+.slider__author-name {
+  color: $black;
+  font-size: 17px;
+}
+
+.slider__author-id {
+  line-height: 30px;
+}
+
+.slider__toggles {
+  display: flex;
+  margin: 0;
+}
+
+.slider__toggle {
+  flex-grow: 1;
+  width: 130px;
+  height: 52px;
+
+  @include button;
+  background: url("../../img/icon-left-arrow.svg") no-repeat center;
+  border: 1px solid $color-border;
+
+  &--next {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
+  cursor: pointer;
+}

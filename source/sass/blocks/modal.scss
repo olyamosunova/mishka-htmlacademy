@@ -1,0 +1,31 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+}
+
+.modal__container {
+  position: fixed;
+  top: 300px;
+  left: 50%;
+  width: 320px;
+  margin-left: -160px;
+  padding: 36px 30px 46px;
+
+  background-color: $white;
+  border: 1px solid $color-modal;
+  box-shadow: 0 5px 10px 0 $color-shadow;
+}
+
+.modal__title {
+  padding-top: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+}

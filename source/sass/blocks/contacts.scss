@@ -1,10 +1,48 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  padding-top: 41px;
+
+  background: url("../../img/bg-zigzag-line.svg") -5px top repeat-x;
+  background-size: 320px 6px;
+}
+
+.contacts__title {
+  margin: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  color: $black;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__list {
+  padding: 23px 30px 35px;
+
+  line-height: 30px;
+}
+
+.contacts__field {
+  padding: 0;
+  padding-bottom: 28px;
+
+  vertical-align: top;
+}
+
+.contacts__value {
+  width: 178px;
+  padding: 0;
+
+  vertical-align: top;
+}
+
+.contacts__map {
+  width: 100%;
 }
 
 .contacts__write {
   margin: 39px 30px;
-  padding-right: 53px;
-  padding-left: 52px;
+  padding-right: 47px;
+  padding-left: 48px;
 }

@@ -1,14 +1,9 @@
 .button {
-  width: 259px;
-  min-height: 60px;
+  width: 260px;
+  padding: 15px 85px 13px;
 
-  padding-top: 20px;
-  padding-right: 85px;
-  padding-bottom: 20px;
-  padding-left: 85px;
-
-  font-size: 17px;
-  height: 20px;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: $font-weight-bold;
   color: $color-main;
   text-transform: uppercase;

@@ -7,10 +7,7 @@
 
 .page-main__title {
   margin: 0;
-  padding-top: 76px;
-  padding-right: 39px;
-  padding-bottom: 120px;
-  padding-left: 39px;
+  padding: 76px 39px 120px;
 
   font-size: 27px;
   line-height: 30px;
@@ -21,19 +18,27 @@
   background-color: $gray;
 
   &--index {
-    background-image: url("../../img/hero-mobile@1x.jpg");
-    background-position: center -13px;
+    background: url("../../img/hero-mobile@1x.jpg") center -13px;
   }
 
   &--catalog {
-    padding-right: 43px;
-    padding-bottom: 74px;
-    padding-left: 42px;
+    padding: 71px 41px 73px 42px;
   }
 
   &--form {
-    padding-right: 37px;
-    padding-bottom: 80px;
-    padding-left: 38px;
+    padding-right: 36px;
+    padding-bottom: 69px;
+    padding-left: 37px;
   }
+}
+
+.page-main__text {
+  margin: 0;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  font-size: 13px;
+  text-align: left;
+  white-space: pre-line;
 }

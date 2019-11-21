@@ -1,0 +1,49 @@
+.form-add {
+  width: 260px;
+}
+
+.form-add__block {
+  padding-top: 25px;
+  padding-bottom: 31px;
+}
+
+.form-add__text {
+  margin: 0;
+  padding-bottom: 28px;
+
+  line-height: 30px;
+  text-align: center;
+}
+
+.form-add__field + .form-add__label {
+  width: 82px;
+  height: 52px;
+  padding: 12px 34px;
+
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: $font-weight-bold;
+
+  border: 2px solid $color-border;
+
+  cursor: pointer;
+}
+
+.form-add__field:checked + .form-add__label {
+  border-color: $color-secondary;
+}
+
+.form-add__button {
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+
+  color: $white;
+  font-size: 17px;
+  line-height: 17px;
+
+  background-color: $color-secondary;
+  border: none;
+
+  cursor: pointer;
+}

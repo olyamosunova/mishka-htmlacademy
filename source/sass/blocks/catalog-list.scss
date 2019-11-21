@@ -1,6 +1,7 @@
 .catalog-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -13,10 +14,7 @@
 
   display: block;
   width: 100%;
-  padding-top: 30px;
-  padding-right: 185px;
-  padding-bottom: 30px;
-  padding-left: 29px;
+  padding: 30px 185px 30px 29px;
 
   font-size: 19px;
   line-height: 24px;
