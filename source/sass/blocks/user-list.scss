@@ -1,6 +1,5 @@
 .user-list {
-  margin: 0;
-  padding: 0;
+  @include list;
 }
 
 .user-list__item {
@@ -21,5 +20,26 @@
     position: absolute;
     top: 0;
     left: 33px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 399px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .user-list__description {
+    @include visually-hidden;
+  }
+
+  .user-list__item {
+    box-shadow: none;
+    border-left: 1px solid $color-border;
+
+    &--search {
+      width: 82px;
+    }
   }
 }

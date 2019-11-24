@@ -6,3 +6,16 @@
 
   background-color: $gray;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 58px;
+    padding-bottom: 57px;
+    padding-right: 52px;
+
+    background: $gray url("../../img/logo-footer.svg") 50px center no-repeat;
+  }
+}

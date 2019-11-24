@@ -54,3 +54,52 @@
     background-image: url("../../img/icon-feature-gift.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 771px;
+    padding-top: 16px;
+
+    background-position: left top;
+    background-size: 771px 15px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 487px;
+  }
+
+  .advantages__item {
+    margin-right: 99px;
+    padding-top: 29px;
+    padding-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1050px;
+    margin-left: 50px;
+    padding-left: 175px;
+
+    background-size: 1050px 23px;
+  }
+
+  .advantages__list {
+    height: 500px;
+    padding-top: 13px;
+  }
+
+  .advantages__item {
+    margin-right: 115px;
+  }
+}

@@ -18,3 +18,18 @@
 .copyright__link {
   padding-top: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    padding-left: 54px;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-left: 274px;
+  }
+}
