@@ -1,13 +1,8 @@
-.main-nav {
-  width: 320px;
-  position: relative;
-}
-
 .main-nav__toggle {
   width: 20px;
   height: 14px;
   position: absolute;
-  top: -48px;
+  top: 35px;
   right: 30px;
 
   background: url("../../img/icon-menu-open.svg") no-repeat;
@@ -27,10 +22,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    width: auto;
-  }
-
   .main-nav__toggle {
     @include visually-hidden;
   }
