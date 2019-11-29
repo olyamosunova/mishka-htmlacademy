@@ -16,12 +16,7 @@
 }
 
 .product-week__image {
-  display: none;
   margin-bottom: 29px;
-
-  &--mobile {
-    display: block;
-  }
 }
 
 .product-week__description {
@@ -124,13 +119,10 @@
   }
 
   .product-week__image {
-    display: none;
     position: absolute;
     right: 0;
-
-    &--tablet {
-      display: block;
-    }
+    width: 333px;
+    height: 404px;
   }
 }
 
@@ -161,12 +153,9 @@
   }
 
   .product-week__image {
-    display: none;
+    width: 525px;
+    height: 623px;
     top: -114px;
-
-    &--desktop {
-      display: block;
-    }
   }
 
   .product-week__order {

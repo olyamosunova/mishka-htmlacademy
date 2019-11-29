@@ -2,7 +2,7 @@
   padding-left: 30px;
   padding-right: 30px;
 
-  background: url("../../img/bg-zigzag-line.svg") -5px top repeat-x;
+  background: url("../../img/bg-zigzag-line.svg") -5px top no-repeat;
   background-size: 320px 6px;
 }
 
@@ -11,6 +11,9 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 
@@ -18,7 +21,6 @@
 }
 
 .advantages__item {
-  width: 251px;
   padding-top: 57px;
   padding-bottom: 30px;
 
@@ -53,41 +55,49 @@
   &--present {
     background-image: url("../../img/icon-feature-gift.svg");
   }
+
+  &:nth-child(odd) {
+    order: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 771px;
     padding-top: 16px;
+    padding-left: 52px;
 
     background-position: left top;
     background-size: 771px 15px;
   }
 
   .advantages__list {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 487px;
   }
 
   .advantages__item {
-    margin-right: 99px;
+    width: 50%;
     padding-top: 29px;
     padding-bottom: 60px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &:nth-child(odd) {
+      order: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: 1050px;
     margin-left: 50px;
     padding-left: 175px;
 
@@ -95,11 +105,10 @@
   }
 
   .advantages__list {
-    height: 500px;
     padding-top: 13px;
   }
 
   .advantages__item {
-    margin-right: 115px;
+    width: 40%;
   }
 }
