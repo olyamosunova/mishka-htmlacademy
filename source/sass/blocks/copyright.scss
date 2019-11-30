@@ -18,3 +18,11 @@
 .copyright__link {
   padding-top: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+
+    border: none;
+  }
+}

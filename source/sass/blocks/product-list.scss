@@ -1,7 +1,7 @@
 .product-list {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   padding: 30px;
   padding-bottom: 0;
 
@@ -16,11 +16,12 @@
   border: 1px solid $color-border;
 }
 
-.product-list__description {
-  margin-right: 32px;
-  margin-left: 28px;
-
-  border-bottom: 1px solid $color-border;
+.product-list__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 31px;
+  padding-left: 28px;
 }
 
 .product-list__link {
@@ -29,7 +30,6 @@
 
 .product-list__title {
   margin: 0;
-  padding-top: 31px;
   padding-bottom: 17px;
 
   font-size: 17px;
@@ -46,12 +46,13 @@
 }
 
 .product-list__purchase {
+  width: 204px;
   display: flex;
   justify-content: space-between;
-  margin-right: 32px;
-  margin-left: 28px;
   padding-top: 27px;
   padding-bottom: 30px;
+
+  border-top: 1px solid $color-border;
 }
 
 .product-list__price {
@@ -67,4 +68,80 @@
   border: none;
 
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    width: 769px;
+    margin-top: -24px;
+    padding: 67px 50px 0;
+    background: url("../../img/bg-zigzag-fill.svg") left top;
+  }
+
+  .product-list__item {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 666px;
+  }
+
+  .product-list__image {
+    width: 334px;
+    height: 334px;
+  }
+
+  .product-list__title {
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .product-list__description {
+    width: 270px;
+  }
+
+  .product-list__purchase {
+    width: 268px;
+    padding: 27px 0;
+  }
+
+  .product-list__characteristics {
+    padding: 0;
+
+    font-size: 15px;
+  }
+
+  .product-list__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    width: 1150px;
+    padding: 111px 51px 0 49px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .product-list__item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 316px;
+    padding: 0;
+  }
+
+  .product-list__purchase {
+    width: 256px;
+    margin-top: 45px;
+  }
+
+  .product-list__characteristics {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .product-list__image {
+    width: 316px;
+    height: 462px;
+  }
 }

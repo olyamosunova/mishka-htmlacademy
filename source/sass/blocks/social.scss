@@ -10,3 +10,11 @@
   justify-content: space-between;
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 141px;
+    padding: 0;
+    padding-top: 22px;
+  }
+}

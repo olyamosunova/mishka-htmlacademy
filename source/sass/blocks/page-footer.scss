@@ -6,3 +6,20 @@
 
   background-color: $gray;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 58px 52px 57px 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    padding-top: 22px;
+  }
+}

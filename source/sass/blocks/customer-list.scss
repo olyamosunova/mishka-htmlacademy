@@ -1,0 +1,20 @@
+.customer-list {
+  display: none;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  margin: 0;
+
+  font-weight: $font-weight-bold;
+}
+
+.customer-list__link {
+  padding-right: 60px;
+  color: $black;
+}
+
+@media (min-width: $desktop-width) {
+  .customer-list {
+    display: flex;
+  }
+}

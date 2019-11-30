@@ -37,6 +37,12 @@
   vertical-align: top;
 }
 
+.contacts__email {
+  color: inherit;
+
+  border-bottom: 1px solid $color-secondary;
+}
+
 .contacts__map {
   width: 100%;
 }

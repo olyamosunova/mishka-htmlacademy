@@ -15,10 +15,17 @@
   text-transform: uppercase;
 }
 
+.product-week__image {
+  margin-bottom: 29px;
+}
+
 .product-week__description {
+  padding-top: 30px;
+}
+
+.product-week__note {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
   padding-bottom: 34px;
 }
 
@@ -50,6 +57,108 @@
 }
 
 .product-week__order {
+  margin-top: 28px;
   margin-bottom: 36px;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .product-week {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -14px;
+    padding-left: 52px;
+    padding-right: 52px;
+
+    background: url("../../img/bg-zigzag-fill.svg") top repeat-x;
+  }
+
+  .product-week__title {
+    padding-top: 43px;
+  }
+
+  .product-week__legend {
+    width: 70px;
+    padding-top: 47px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .product-week__description {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+  }
+
+  .product-week__note {
+    width: 282px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-week__list {
+    margin-bottom: 53px;
+  }
+
+  .product-week__price {
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .product-week__order {
+    margin-top: 34px;
+    margin-bottom: 53px;
+
+    font-size: 17px;
+  }
+
+  .product-week__image {
+    position: absolute;
+    right: 0;
+    width: 333px;
+    height: 404px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-week {
+    position: relative;
+    justify-content: flex-start;
+    padding-top: 117px;
+    padding-right: 50px;
+    padding-left: 97px;
+  }
+
+  .product-week__title {
+    padding-left: 58px;
+    z-index: 1;
+  }
+
+  .product-week__legend {
+    order: -1;
+  }
+
+  .product-week__list {
+    margin-bottom: 111px;
+  }
+
+  .product-week__description {
+    padding-left: 129px;
+  }
+
+  .product-week__image {
+    width: 525px;
+    height: 623px;
+    top: -114px;
+  }
+
+  .product-week__order {
+    margin-top: 39px;
+  }
 }
