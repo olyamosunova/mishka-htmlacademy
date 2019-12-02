@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -28,4 +28,21 @@
 
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__container {
+    width: 566px;
+    margin-left: -284px;
+    padding: 51px 105px 46px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+
+    br {
+      display: none;
+    }
+  }
 }
