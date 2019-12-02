@@ -18,3 +18,21 @@
   color: $color-secondary;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .control-group {
+    display: block;
+  }
+
+  .control-group__title {
+    display: inline-block;
+    padding: 0;
+    padding-top: 80px;
+    margin: 0;
+  }
+
+  .control-group__item {
+    display: inline-block;
+    margin-left: 130px;
+  }
+}
