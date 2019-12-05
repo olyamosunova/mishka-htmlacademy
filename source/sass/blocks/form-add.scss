@@ -3,13 +3,13 @@
 }
 
 .form-add__block {
-  padding-top: 25px;
-  padding-bottom: 31px;
+  margin-top: 25px;
+  margin-bottom: 31px;
 }
 
 .form-add__text {
   margin: 0;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 
   line-height: 30px;
   text-align: center;
@@ -61,7 +61,7 @@
     justify-content: space-between;
     align-self: flex-start;
     width: 100%;
-    padding-top: 26px;
+    margin-top: 26px;
   }
 
   .form-add__label {
@@ -70,7 +70,7 @@
   }
 
   .form-add__text {
-    padding: 0;
+    margin: 0;
     font-size: 17px;
   }
 
