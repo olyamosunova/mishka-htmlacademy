@@ -2,7 +2,7 @@
   width: 20px;
   height: 14px;
   position: absolute;
-  top: 35px;
+  top: 30px;
   right: 30px;
 
   background: url("../../img/icon-menu-open.svg") no-repeat;
@@ -19,6 +19,37 @@
   padding: 0;
 
   list-style: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  height: 20px;
+  background-image: url("../../img/icon-menu-close.svg");
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
+}
+
+/*
+
+.main-nav--closed + .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened + .main-nav__wrapper {
+  display: block;
+}
+
+*/
+
+@media (max-width: $mobile-width) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
