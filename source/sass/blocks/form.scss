@@ -85,6 +85,8 @@
   line-height: 18px;
   color: $color-main;
   border: 2px solid $color-main;
+
+  resize: none;
 }
 
 .form__textarea::placeholder,
