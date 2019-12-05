@@ -35,3 +35,17 @@
   background-color: $color-secondary;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .radio {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: -15px;
+  }
+
+  .radio__label {
+    padding-top: 10px;
+    padding-bottom: 57px;
+  }
+}

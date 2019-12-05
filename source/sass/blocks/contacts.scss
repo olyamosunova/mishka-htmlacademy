@@ -3,7 +3,7 @@
   flex-direction: column;
   padding-top: 41px;
 
-  background: url("../../img/bg-zigzag-line.svg") -5px top repeat-x;
+  background: url("../../img/bg-zigzag-line.svg") left top repeat-x;
   background-size: 320px 6px;
 }
 
@@ -51,4 +51,111 @@
   margin: 39px 30px;
   padding-right: 47px;
   padding-left: 48px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    position: relative;
+    align-items: flex-start;
+    width: 768px;
+    padding-top: 72px;
+    padding-bottom: 57px;
+
+    background-position: left top;
+    background-size: 771px 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 47px;
+      right: 55px;
+      width: 47px;
+      height: 81px;
+      background: url("../../img/icon-flag.svg") no-repeat;
+    }
+  }
+
+  .contacts__title {
+    padding-left: 57px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__list {
+    padding: 65px 60px 61px 57px;
+
+    font-size: 17px;
+  }
+
+  .contacts__list tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__field {
+    padding-right: 26px;
+  }
+
+  .contacts__value {
+    width: 221px;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+
+  .contacts__write {
+    align-self: center;
+    width: 230px;
+    height: 52px;
+    margin: 0;
+    margin-top: 55px;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    width: 1050px;
+    padding-top: 90px;
+    padding-bottom: 105px;
+    padding-left: 175px;
+
+    @include container;
+    background-size: 1050px 23px;
+
+    &::before {
+      top: 133px;
+      left: 64px;
+    }
+  }
+
+  .contacts__title {
+    padding: 0;
+    padding-top: 59px;
+
+    font-size: 53px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    right: 0;
+    width: 525px;
+    height: 457px;
+    margin-left: 53px;
+  }
+
+  .contacts__write {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .contacts__list {
+    padding-left: 0;
+  }
+
+  .contacts__list tbody {
+    flex-direction: column;
+  }
 }

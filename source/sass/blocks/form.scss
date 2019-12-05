@@ -70,8 +70,7 @@
   }
 
   border: none;
-
-  box-shadow: 0 2px 0 0 $black;
+  border-bottom: 2px solid $black;
 }
 
 .form__textarea {
@@ -86,6 +85,8 @@
   line-height: 18px;
   color: $color-main;
   border: 2px solid $color-main;
+
+  resize: none;
 }
 
 .form__textarea::placeholder,
@@ -111,4 +112,126 @@
   line-height: 17px;
 
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    position: relative;
+    width: 768px;
+    margin-bottom: 50px;
+    padding: 0;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .form__fieldset {
+    width: 100%;
+    padding-left: 51px;
+
+    border: none;
+
+    &:nth-child(even) {
+      background-color: $gray;
+    }
+  }
+
+  .form__category {
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 51px;
+
+    &--gray {
+      background-color: $gray;
+    }
+
+    &:nth-of-type(1) {
+      padding-top: 50px;
+      margin-top: 50px;
+    }
+
+    &:nth-of-type(2) {
+      padding-bottom: 50px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .form__input {
+    width: 75%;
+    font-size: 19px;
+    line-height: 19px;
+
+    background-position: 447px center;
+  }
+
+  .form__textarea {
+    width: 501px;
+    height: 142px;
+    margin-bottom: 53px;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .form__submit {
+    width: 230px;
+    height: 52px;
+    padding: 0;
+    margin: 0;
+    margin-left: 51px;
+  }
+
+  .form__legend {
+    position: absolute;
+    bottom: 17px;
+    right: 51px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1150px;
+  }
+
+  .form__fieldset {
+    padding-right: 202px;
+    padding-left: 114px;
+  }
+
+  .form__item {
+    padding-right: 225px;
+    padding-left: 114px;
+  }
+
+  .form__input {
+    width: 85%;
+
+    background-position: right center;
+  }
+
+  .form__textarea {
+    width: 700px;
+  }
+
+  .form__legend {
+    right: 225px;
+  }
+
+  .form__submit {
+    margin-left: 225px;
+  }
+
+  .form__category {
+    padding-top: 24px;
+  }
 }

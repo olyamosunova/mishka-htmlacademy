@@ -3,6 +3,11 @@
   padding-bottom: 0;
 }
 
+.textfield__block {
+  display: flex;
+  flex-direction: column;
+}
+
 .textfield__label {
   padding-top: 24px;
 }
@@ -17,9 +22,37 @@
   color: $color-main;
 
   border: none;
+  border-radius: 0;
   border-bottom: 2px solid $black;
 }
 
 .textfield__input::placeholder {
   color: $color-placeholder;
+}
+
+@media (min-width: $tablet-width) {
+  .textfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+
+  .textfield__block {
+    flex-direction: row;
+  }
+
+  .textfield__label {
+    padding-right: 25px;
+  }
+
+  .textfield__input {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textfield {
+    padding-right: 23px;
+  }
 }

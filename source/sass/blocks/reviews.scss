@@ -18,3 +18,47 @@
   padding-top: 13px;
   padding-bottom: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 768px;
+    position: relative;
+    margin-bottom: 67px;
+
+    background: $white url("../../img/review@1x.jpg") left top no-repeat;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 52px 53px 48px;
+  }
+
+  .reviews__write {
+    width: 175px;
+    height: 52px;
+    position: absolute;
+    top: 60px;
+    right: 52px;
+    margin: 0;
+    padding: 15px 0;
+
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1050px;
+
+    @include container;
+  }
+
+  .reviews__wrapper {
+    padding-left: 174px;
+  }
+
+  .reviews__write {
+    right: 0;
+  }
+}
