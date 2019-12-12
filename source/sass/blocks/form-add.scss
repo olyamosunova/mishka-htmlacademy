@@ -3,13 +3,12 @@
 }
 
 .form-add__block {
-  margin-top: 25px;
-  margin-bottom: 31px;
+  margin-top: 12px;
 }
 
 .form-add__text {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 37px;
 
   line-height: 30px;
   text-align: center;
@@ -34,7 +33,7 @@
 }
 
 .form-add__button {
-  margin-top: 15px;
+  margin-top: 44px;
   padding-top: 20px;
   padding-bottom: 16px;
 
@@ -61,7 +60,7 @@
     justify-content: space-between;
     align-self: flex-start;
     width: 100%;
-    margin-top: 26px;
+    margin-top: 22px;
   }
 
   .form-add__label {
@@ -75,6 +74,15 @@
   }
 
   .form-add__button {
-    margin: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-add__label {
+    &:hover {
+      border-color: $control-active;
+    }
   }
 }

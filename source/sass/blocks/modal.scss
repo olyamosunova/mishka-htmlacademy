@@ -1,5 +1,4 @@
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -8,15 +7,23 @@
 
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 100;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .modal__container {
   position: fixed;
-  top: 300px;
+  top: 31vh;
   left: 50%;
   width: 320px;
   margin-left: -160px;
-  padding: 36px 30px 46px;
+  padding: 29px 30px 40px;
 
   background-color: $white;
   border: 1px solid $color-modal;
@@ -34,7 +41,7 @@
   .modal__container {
     width: 566px;
     margin-left: -284px;
-    padding: 51px 105px 46px;
+    padding: 32px 105px 47px;
   }
 
   .modal__title {
@@ -44,5 +51,12 @@
     br {
       display: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal__container {
+    margin-left: -307px;
+    padding-top: 35px;
   }
 }

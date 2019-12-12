@@ -1,7 +1,7 @@
 .customer-list {
   display: none;
   position: absolute;
-  top: 95px;
+  top: 106px;
   left: 0;
   margin: 0;
 
@@ -18,5 +18,19 @@
     display: flex;
 
     z-index: 3;
+  }
+
+  .customer-list__link {
+    &:hover {
+      color: $link-hover;
+    }
+
+    &:focus {
+      color: $link-down;
+    }
+
+    &:active {
+      color: $link-down;
+    }
   }
 }
