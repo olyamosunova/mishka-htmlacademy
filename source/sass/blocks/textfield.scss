@@ -1,58 +1,68 @@
 .textfield {
-  padding-top: 9px;
-  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
 }
 
 .textfield__block {
   display: flex;
   flex-direction: column;
-}
-
-.textfield__label {
-  padding-top: 24px;
+  margin-bottom: 20px;
 }
 
 .textfield__input {
-  padding-top: 18px;
-  padding-bottom: 17px;
+  box-sizing: border-box;
+  padding: 15px 0 16px 0;
 
-  font-family: $font-family;
-  font-size: 17px;
-  line-height: 24px;
+  @include input-field;
+  line-height: 20px;
   color: $color-main;
 
-  border: none;
   border-radius: 0;
-  border-bottom: 2px solid $black;
-}
 
-.textfield__input::placeholder {
-  color: $color-placeholder;
+  &::placeholder {
+    color: $color-placeholder;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .textfield {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 0;
     padding-right: 50px;
   }
 
   .textfield__block {
     flex-direction: row;
-  }
-
-  .textfield__label {
-    padding-right: 25px;
+    margin-bottom: 37px;
   }
 
   .textfield__input {
     width: 100%;
+    margin-left: 26px;
+    padding-top: 0;
+    padding-bottom: 9px;
+    padding-left: 18px;
+
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .textfield {
-    padding-right: 23px;
+    padding-right: 225px;
+  }
+
+  .textfield__input {
+    margin-left: 32px;
+
+    &:hover {
+      border-color: $control-hover;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $control-hover;
+    }
   }
 }
