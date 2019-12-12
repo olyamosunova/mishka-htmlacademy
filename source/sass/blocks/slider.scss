@@ -1,12 +1,12 @@
 .slider__list {
   @include list;
-  padding-top: 25px;
-  padding-bottom: 31px;
+  margin-top: 25px;
+  margin-bottom: 31px;
 }
 
 .slider__text {
   margin: 0;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
 
   line-height: 30px;
   text-align: left;
@@ -18,7 +18,9 @@
 }
 
 .slider__author-id {
+  padding-left: 1px;
   line-height: 30px;
+  letter-spacing: 0.9px;
 }
 
 .slider__toggles {
@@ -47,7 +49,8 @@
 
   .slider__list {
     padding: 0;
-    padding-top: 56px;
+    margin-top: 49px;
+    padding-left: 4px;
 
     font-size: 17px;
   }
@@ -58,15 +61,26 @@
   }
 
   .slider__text {
-    padding-bottom: 56px;
+    margin-bottom: 58px;
+  }
+
+  .slider__author-name {
+    letter-spacing: 0.7px;
+  }
+
+  .slider__author-id {
+    margin-top: 2px;
+    padding: 0;
+
+    letter-spacing: 0;
   }
 
   .slider__toggles {
     width: 137px;
     justify-content: space-between;
     position: absolute;
-    bottom: 62px;
-    right: 71px;
+    bottom: 99px;
+    right: 69px;
   }
 
   .slider__toggle {
@@ -77,11 +91,30 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider__list {
+    margin-top: 20px;
+    margin-bottom: 67px;
+  }
+
   .slider__text {
+    margin-bottom: 40px;
+
     white-space: pre-line;
   }
 
   .slider__toggles {
+    bottom: 147px;
     right: 19px;
+  }
+
+  .slider__toggle {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      outline: none;
+      opacity: 0.3;
+    }
   }
 }

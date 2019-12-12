@@ -11,4 +11,14 @@
 
   border: 2px solid $color-main;
   background-color: inherit;
+
+  &:hover {
+    color: $white;
+    background-color: $color-main;
+  }
+
+  &:focus {
+    color: rgba($white, 0.3);
+    background-color: $color-main;
+  }
 }

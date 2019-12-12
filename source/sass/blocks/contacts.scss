@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  padding-top: 41px;
+  padding-top: 42px;
 
   background: url("../../img/bg-zigzag-line.svg") left top repeat-x;
   background-size: 320px 6px;
@@ -10,7 +10,7 @@
 .contacts__title {
   margin: 0;
   padding-right: 30px;
-  padding-left: 30px;
+  padding-left: 28px;
 
   color: $black;
   font-size: 18px;
@@ -18,7 +18,7 @@
 }
 
 .contacts__list {
-  padding: 23px 30px 35px;
+  padding: 23px 27px 35px;
 
   line-height: 30px;
 }
@@ -45,12 +45,13 @@
 
 .contacts__map {
   width: 100%;
+
+  border: none;
 }
 
 .contacts__write {
-  margin: 39px 30px;
-  padding-right: 47px;
-  padding-left: 48px;
+  margin: 40px 30px;
+  padding: 13px 47px 13px 48px;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,7 +59,7 @@
     position: relative;
     align-items: flex-start;
     width: 768px;
-    padding-top: 72px;
+    padding-top: 77px;
     padding-bottom: 57px;
 
     background-position: left top;
@@ -67,8 +68,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 47px;
-      right: 55px;
+      top: 62px;
+      right: 53px;
       width: 47px;
       height: 81px;
       background: url("../../img/icon-flag.svg") no-repeat;
@@ -76,24 +77,26 @@
   }
 
   .contacts__title {
-    padding-left: 57px;
+    padding-left: 45px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   .contacts__list {
-    padding: 65px 60px 61px 57px;
+    padding: 45px 60px 52px 46px;
 
     font-size: 17px;
   }
 
   .contacts__list tbody {
+    width: 633px;
     display: flex;
     justify-content: space-between;
   }
 
   .contacts__field {
-    padding-right: 26px;
+    padding-right: 20px;
   }
 
   .contacts__value {
@@ -110,7 +113,8 @@
     height: 52px;
     margin: 0;
     margin-top: 55px;
-    padding: 15px 0;
+    padding: 14px 0;
+    padding-left: 7px;
   }
 }
 
@@ -118,15 +122,15 @@
   .contacts {
     position: relative;
     width: 1050px;
-    padding-top: 90px;
+    padding-top: 108px;
     padding-bottom: 105px;
-    padding-left: 175px;
+    padding-left: 169px;
 
     @include container;
     background-size: 1050px 23px;
 
     &::before {
-      top: 133px;
+      top: 155px;
       left: 64px;
     }
   }
@@ -140,6 +144,7 @@
 
   .contacts__map {
     position: absolute;
+    top: 92px;
     right: 0;
     width: 525px;
     height: 457px;
@@ -149,13 +154,29 @@
   .contacts__write {
     align-self: flex-start;
     margin: 0;
+    margin-top: 74px;
+    margin-left: 6px
   }
 
   .contacts__list {
-    padding-left: 0;
+    padding: 0;
+    padding-top: 47px;
   }
 
   .contacts__list tbody {
     flex-direction: column;
+  }
+
+  .contacts__email {
+    &:hover {
+      color: $email-hover;
+      border-color: $email-hover;
+    }
+
+    &:focus {
+      outline: none;
+      color: $email-hover;
+      opacity: 0.3;
+    }
   }
 }
