@@ -12,6 +12,11 @@
 
   &--dark {
     background-color: $color-secondary-dark;
+
+    .catalog-list__image {
+      right: 26px;
+      bottom: 23px;
+    }
   }
 }
 
@@ -35,13 +40,6 @@
   right: 36px;
 
   fill: $catalog-icon-color;
-}
-
-.catalog-list__item--dark {
-  .catalog-list__image {
-    right: 26px;
-    bottom: 23px;
-  }
 }
 
 @media (min-width: $tablet-width) {

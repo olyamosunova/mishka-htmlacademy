@@ -47,10 +47,11 @@
 
 .contact-details__icon {
   position: absolute;
-  right: 233px;
+  top: 45px;
+  right: 8px;
 
   &--email {
-    right: 228px;
+    right: 4px;
   }
 }
 
@@ -88,6 +89,15 @@
     font-size: 19px;
     line-height: 19px;
   }
+
+  .contact-details__icon {
+    top: 0;
+    right: 77px;
+
+    &--email {
+      right: 72px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -97,6 +107,14 @@
 
   .contact-details__category {
     margin-left: 112px;
+  }
+
+  .contact-details__icon {
+    right: 233px;
+
+    &--email {
+      right: 228px;
+    }
   }
 
   .contact-details__input {

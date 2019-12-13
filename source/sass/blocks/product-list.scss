@@ -152,6 +152,7 @@
 
     &:focus {
       outline: none;
+
       .product-list__title {
         outline: none;
         opacity: 0.3;
@@ -166,11 +167,11 @@
   }
 
   .product-list__item:hover .product-list__info {
-    box-shadow: 0 6px 10px 0px rgba($black, 0.1);
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
   }
 
   .product-list__item:focus .product-list__info {
-    box-shadow: 0 3px 5px 0px rgba($black, 0.1);
+    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
   }
 
   .product-list__purchase {
@@ -196,6 +197,7 @@
 
     &:focus {
       outline: none;
+
       svg {
         fill: $color-secondary;
         opacity: 0.3;

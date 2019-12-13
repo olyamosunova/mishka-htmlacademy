@@ -40,6 +40,7 @@
   margin-top: 23px;
   margin-bottom: 14px;
   padding: 14px 0 0 15px;
+
   @include input-field;
 
   border: 2px solid $color-main;
@@ -54,7 +55,7 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: $font-weight-normal;
-  color: $color-main
+  color: $color-main;
 }
 
 .form__submit {
@@ -85,7 +86,7 @@
     font-size: 17px;
     line-height: 17px;
 
-    &:after {
+    &::after {
       display: none;
     }
   }
