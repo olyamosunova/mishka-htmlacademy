@@ -1,6 +1,6 @@
 .slider__list {
   @include list;
-  margin-top: 25px;
+  margin-top: 23px;
   margin-bottom: 31px;
 }
 
@@ -18,9 +18,8 @@
 }
 
 .slider__author-id {
-  padding-left: 1px;
+  font-size: 17px;
   line-height: 30px;
-  letter-spacing: 0.9px;
 }
 
 .slider__toggles {
@@ -65,7 +64,7 @@
   }
 
   .slider__author-name {
-    letter-spacing: 0.7px;
+    font-size: 18px;
   }
 
   .slider__author-id {

@@ -3,6 +3,8 @@
 @import "colors.scss";
 @import "mixins.scss";
 @import "common.scss";
+@import "blocks/title.scss";
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -16,8 +18,6 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/product-list.scss";
-@import "blocks/button.scss";
-@import "blocks/title.scss";
 @import "blocks/reviews.scss";
 @import "blocks/slider.scss";
 @import "blocks/contacts.scss";
