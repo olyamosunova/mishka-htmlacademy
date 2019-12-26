@@ -1,4 +1,5 @@
 .catalog-list {
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -6,7 +7,7 @@
 }
 
 .catalog-list__item {
-  width: 320px;
+  width: auto;
 
   background-color: $color-secondary;
 
@@ -25,7 +26,7 @@
 
   display: block;
   width: 100%;
-  padding: 26px 185px 30px 29px;
+  padding: 26px 185px 30px 9.4%;
 
   font-size: 19px;
   line-height: 24px;
@@ -44,14 +45,14 @@
 
 @media (min-width: $tablet-width) {
   .catalog-list {
-    width: 772px;
+    width: auto;
     display: flex;
     justify-content: center;
-    margin-top: -105px;
+    margin: -110px 6.77% 0;
   }
 
   .catalog-list__item {
-    width: 334px;
+    width: 50%;
     min-height: 107px;
   }
 
@@ -77,20 +78,19 @@
 
 @media (min-width: $desktop-width) {
   .catalog-list {
-    width: 1150px;
-    margin-top: -174px;
+    width: 91.30%;
+    margin: -138px 4.35% 0;
 
     &:hover {
-      margin-top: -178px;
+      margin-top: -139px;
     }
   }
 
   .catalog-list__item {
-    width: 525px;
     min-height: 119px;
 
     &:hover {
-      transform: scale(1.04);
+      transform: scale(1, 1.04);
     }
   }
 

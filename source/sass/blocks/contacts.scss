@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   padding-top: 42px;
+  width: 100%;
 
   background: url("../../img/bg-zigzag-line.svg") left top repeat-x;
-  background-size: 320px 6px;
+  background-size: auto 6px;
 }
 
 .contacts__title {
   margin: 0;
-  padding-right: 30px;
-  padding-left: 28px;
+  padding: 0 9.4%;
 
   color: $black;
   font-size: 18px;
@@ -18,7 +18,7 @@
 }
 
 .contacts__list {
-  padding: 23px 27px 35px;
+  padding: 23px 9.4% 35px;
 
   line-height: 30px;
 }
@@ -50,7 +50,7 @@
 }
 
 .contacts__write {
-  margin: 40px 30px;
+  margin: 40px 9.4%;
   padding: 13px 47px 13px 48px;
 }
 
@@ -58,12 +58,12 @@
   .contacts {
     position: relative;
     align-items: flex-start;
-    width: 768px;
+    width: 100%;
     padding-top: 77px;
     padding-bottom: 57px;
 
     background-position: left top;
-    background-size: 771px 15px;
+    background-size: auto 15px;
 
     &::before {
       content: "";
@@ -77,20 +77,21 @@
   }
 
   .contacts__title {
-    padding-left: 45px;
+    padding-left: 5.77%;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   .contacts__list {
-    padding: 45px 60px 52px 46px;
+    width: 100%;
+    padding: 47px 7.8% 52px 5.77%;
 
     font-size: 17px;
   }
 
   .contacts__list tbody {
-    width: 633px;
+    width: 96.3%;
     display: flex;
     justify-content: space-between;
   }
@@ -121,17 +122,17 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    width: 1050px;
     padding-top: 108px;
     padding-bottom: 105px;
-    padding-left: 169px;
+    padding-left: 19%;
 
-    @include container;
     background-size: 1050px 23px;
+    background-position: 50px 0;
+    background-repeat: no-repeat;
 
     &::before {
       top: 155px;
-      left: 64px;
+      left: 9.8%;
     }
   }
 
@@ -145,10 +146,9 @@
   .contacts__map {
     position: absolute;
     top: 92px;
-    right: 0;
-    width: 525px;
+    right: 4.35%;
+    width: 45.65%;
     height: 457px;
-    margin-left: 53px;
   }
 
   .contacts__write {

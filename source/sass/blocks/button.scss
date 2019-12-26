@@ -1,5 +1,5 @@
 .button {
-  width: 260px;
+  width: auto;
   padding: 15px 85px 13px;
 
   font-size: 18px;
@@ -10,15 +10,19 @@
   text-align: center;
 
   border: 2px solid $color-main;
-  background-color: inherit;
+  background-color: transparent;
+}
 
-  &:hover {
-    color: $white;
-    background-color: $color-main;
-  }
+@media (min-width: $desktop-width) {
+  .button {
+    &:hover {
+      color: $white;
+      background-color: $color-main;
+    }
 
-  &:focus {
-    color: rgba($white, 0.3);
-    background-color: $color-main;
+    &:focus {
+      color: rgba($white, 0.3);
+      background-color: $color-main;
+    }
   }
 }

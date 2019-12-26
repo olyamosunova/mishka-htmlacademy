@@ -1,8 +1,7 @@
 .form {
-  width: 320px;
+  width: 100%;
   margin-bottom: 55px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0 9.4%;
 
   font-size: 17px;
   line-height: 18px;
@@ -49,6 +48,8 @@
   &::placeholder {
     color: $color-placeholder;
   }
+
+  overflow: auto;
 }
 
 .form__legend {
@@ -81,7 +82,7 @@
   .form__category {
     margin: 0;
     margin-top: 16px;
-    margin-left: 51px;
+    margin-left: 6.5%;
 
     font-size: 17px;
     line-height: 17px;
@@ -119,10 +120,10 @@
   }
 
   .form__submit {
-    width: 230px;
+    width: 29.95%;
     align-self: flex-start;
     margin-top: 26px;
-    margin-left: 50px;
+    margin-left: 6.5%;
   }
 
   .form__legend {
@@ -141,12 +142,12 @@
   }
 
   .form__category {
-    margin-left: 112px;
+    margin-left: 9.65%;
   }
 
   .form__textarea {
     width: 61%;
-    margin-right: 225px;
+    margin-right: 19.57%;
     padding-top: 11px;
 
     &:hover {
@@ -161,7 +162,7 @@
 
   .form__submit {
     margin-top: 28px;
-    margin-left: 225px;
+    margin-left: 19.57%;
   }
 
   .form__legend {

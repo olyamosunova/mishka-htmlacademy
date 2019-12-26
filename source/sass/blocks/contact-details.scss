@@ -69,7 +69,7 @@
   }
 
   .contact-details__category {
-    margin-left: 51px;
+    margin-left: 6.5%;
 
     font-size: 17px;
     line-height: 17px;
@@ -81,7 +81,8 @@
 
   .contact-details__input {
     width: 65%;
-    margin-right: 50px;
+    margin-right: 6.5%;
+    margin-left: auto;
     padding-top: 0;
     padding-bottom: 16px;
     padding-left: 15px;
@@ -92,10 +93,10 @@
 
   .contact-details__icon {
     top: 0;
-    right: 77px;
+    right: 10.03%;
 
     &--email {
-      right: 72px;
+      right: 9.38%;
     }
   }
 }
@@ -106,20 +107,20 @@
   }
 
   .contact-details__category {
-    margin-left: 112px;
+    margin-left: 9.65%;
   }
 
   .contact-details__icon {
-    right: 233px;
+    right: 20.25%;
 
     &--email {
-      right: 228px;
+      right: 19.83%;
     }
   }
 
   .contact-details__input {
     width: 61%;
-    margin-right: 225px;
+    margin-right: 19.57%;
 
     &:hover {
       border-color: $control-hover;

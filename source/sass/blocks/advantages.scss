@@ -1,9 +1,9 @@
 .advantages {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
+  padding: 0 9.4%;
 
-  background: url("../../img/bg-zigzag-line.svg") -5px top no-repeat;
-  background-size: 320px 6px;
+  background: url("../../img/bg-zigzag-line.svg") -5px top repeat-x;
+  background-size: auto 6px;
 }
 
 .advantages__title {
@@ -69,10 +69,10 @@
     flex-direction: column;
     align-items: flex-start;
     padding-top: 66px;
-    padding-left: 44px;
+    padding-left: 5.73%;
 
     background-position: left top;
-    background-size: 771px 15px;
+    background-size: auto 15px;
   }
 
   .advantages__title {
@@ -90,26 +90,30 @@
   }
 
   .advantages__item {
-    width: 48%;
-    padding-top: 29px;
+    width: 50%;
+    padding-top: 28px;
     padding-bottom: 60px;
+    padding-left: 7px;
 
     font-size: 20px;
     line-height: 22px;
 
     &:nth-child(odd) {
       order: 0;
+      padding-left: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
-    margin-left: 50px;
     padding-top: 80px;
-    padding-left: 169px;
+    padding-right: 4.35%;
+    padding-left: 19.1%;
 
     background-size: 1050px 23px;
+    background-position: 50px 0;
+    background-repeat: no-repeat;
   }
 
   .advantages__list {
@@ -118,5 +122,10 @@
 
   .advantages__item {
     width: 40%;
+    padding-left: 25px;
+
+    &:nth-child(even) {
+      background-position: 25px 2px;
+    }
   }
 }

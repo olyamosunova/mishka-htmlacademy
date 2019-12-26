@@ -9,8 +9,9 @@
 }
 
 .user-list__link {
+  display: block;
   position: relative;
-  padding-left: 77px;
+  padding-left: 24%;
 
   font-size: 17px;
   font-weight: $font-weight-bold;
@@ -19,32 +20,7 @@
   svg {
     position: absolute;
     top: 0;
-    left: 33px;
-  }
-
-  &:hover {
-    color: $link-hover;
-
-    svg {
-      fill: $color-secondary;
-    }
-  }
-
-  &:focus {
-    color: $link-down;
-
-    svg {
-      fill: $color-secondary;
-      opacity: 0.3;
-    }
-  }
-
-  &:active {
-    color: $link-down;
-
-    svg {
-      opacity: 0.3;
-    }
+    left: 9.4%;
   }
 }
 
@@ -53,6 +29,7 @@
     width: 399px;
     display: flex;
     justify-content: flex-start;
+    margin-left: auto;
   }
 
   .user-list__description {
@@ -70,5 +47,38 @@
 
   .user-list__link {
     padding-left: 85px;
+
+    svg {
+      left: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link {
+    &:hover {
+      color: $link-hover;
+
+      svg {
+        fill: $color-secondary;
+      }
+    }
+
+    &:focus {
+      color: $link-down;
+
+      svg {
+        fill: $color-secondary;
+        opacity: 0.3;
+      }
+    }
+
+    &:active {
+      color: $link-down;
+
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 }

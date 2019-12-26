@@ -55,15 +55,15 @@
 
 @media (min-width: $tablet-width) {
   .produce {
-    width: 668px;
-    margin: 0 auto 63px;
+    width: auto;
+    margin: 0 6.5% 63px;
     padding-top: 0;
   }
 
   .produce__title {
-    padding-top: 28px;
-    padding-bottom: 32px;
-    padding-left: 106px;
+    padding-top: 26px;
+    padding-bottom: 33px;
+    padding-left: 15.75%;
 
     font-size: 20px;
 
@@ -87,30 +87,31 @@
   }
 
   .produce__text {
-    padding-top: 0;
-    padding-left: 40px;
+    padding: 0 6% 0;
 
     font-size: 15px;
     line-height: 30px;
   }
 
   .produce__order {
+    display: block;
     align-self: center;
     width: 584px;
     height: 52px;
-    margin: 35px 0 46px;
+    margin: 35px 5.45% 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .produce {
     position: relative;
-    width: 1050px;
     min-height: 455px;
     align-items: flex-end;
-    margin-bottom: 111px;
-    padding-right: 57px;
-    padding-left: 759px;
+    margin-top: 4px;
+    margin-bottom: 106px;
+    margin-left: 4.34%;
+    padding-right: 4.96%;
+    padding-left: 66.09%;
   }
 
   .produce:hover {
@@ -123,14 +124,15 @@
 
   .produce__title {
     padding: 0;
-    padding-top: 100px;
-    padding-bottom: 32px;
+    padding-top: 95px;
+    padding-bottom: 34px;
 
     background-position: 0 47px;
   }
 
   .produce__video {
     position: absolute;
+    top: 0;
     left: 0;
     width: 682px;
   }
@@ -151,6 +153,7 @@
   }
 
   .produce__text {
+    width: 230px;
     padding: 0;
   }
 
