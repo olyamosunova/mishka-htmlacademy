@@ -8,6 +8,7 @@
 
 .catalog-list__item {
   width: auto;
+  min-height: 103px;
 
   background-color: $color-secondary;
 
@@ -16,7 +17,7 @@
 
     .catalog-list__image {
       right: 26px;
-      bottom: 23px;
+      bottom: 17.12%;
     }
   }
 }
@@ -26,7 +27,7 @@
 
   display: block;
   width: 100%;
-  padding: 26px 185px 30px 9.4%;
+  padding: 8.24% 164px 7.24% 30px;
 
   font-size: 19px;
   line-height: 24px;
@@ -37,7 +38,7 @@
 
 .catalog-list__image {
   position: absolute;
-  bottom: 19px;
+  bottom: 12.27%;
   right: 36px;
 
   fill: $catalog-icon-color;
@@ -45,10 +46,10 @@
 
 @media (min-width: $tablet-width) {
   .catalog-list {
-    width: auto;
+    width: calc(100% - 104px);
     display: flex;
     justify-content: center;
-    margin: -110px 6.77% 0;
+    margin: -110px auto 0;
   }
 
   .catalog-list__item {
@@ -57,20 +58,19 @@
   }
 
   .catalog-list__link {
-    padding-top: 28px;
     padding-left: 34px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .catalog-list__image {
-    bottom: 26px;
+    top: 25%;
+    bottom: 0;
     right: 38px;
   }
 
   .catalog-list__item--dark {
     .catalog-list__image {
-      bottom: 27px;
       right: 36px;
     }
   }
@@ -79,7 +79,7 @@
 @media (min-width: $desktop-width) {
   .catalog-list {
     width: 91.3%;
-    margin: -138px 4.35% 0;
+    margin: -138px 50px 0;
 
     &:hover {
       margin-top: -139px;
@@ -95,8 +95,7 @@
   }
 
   .catalog-list__link {
-    padding-right: 306px;
-    padding-left: 36px;
+    padding: 5% 306px 6.24% 36px;
 
     &:hover {
       padding-bottom: 35px;

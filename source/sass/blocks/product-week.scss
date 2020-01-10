@@ -2,16 +2,16 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 9.4%;
+  padding: 0 30px;
 }
 
 .product-week__title {
   padding: 0;
-  margin-top: 25px;
+  margin-top: 27px;
 }
 
 .product-week__legend {
-  margin-top: 4px;
+  margin-top: 7px;
 
   font-size: 17px;
   line-height: 20px;
@@ -22,7 +22,7 @@
 
 .product-week__image {
   align-self: center;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .product-week__description {
@@ -37,7 +37,7 @@
 }
 
 .product-week__list {
-  width: auto;
+  width: 100%;
   margin-top: 18px;
   margin-bottom: 30px;
 
@@ -55,7 +55,7 @@
 .product-week__field {
   width: 67px;
   padding: 0;
-  padding-right: 10.8%;
+  padding-right: 27px;
 }
 
 .product-week__price {
@@ -80,7 +80,7 @@
     flex-wrap: wrap;
     width: 100%;
     margin-top: -14px;
-    padding: 60px 6.77% 0 5.77%;
+    padding: 67px 53px 0 47px;
 
     background: url("../../img/bg-zigzag-fill.svg") top repeat-x;
   }
@@ -116,20 +116,20 @@
     width: 42.89%;
     margin-top: 36px;
     margin-left: 4px;
-    margin-bottom: 59px;
+    margin-bottom: 58px;
   }
 
   .product-week__price {
     align-self: flex-start;
     font-size: 20px;
-    padding-left: 11.34%;
+    padding-left: 74px;
   }
 
   .product-week__order {
-    width: 42.9%;
+    width: 43.9%;
     margin-top: 35px;
     margin-bottom: 53px;
-    padding-left: 91px;
+    padding-left: 86px;
 
     font-size: 17px;
   }
@@ -141,13 +141,17 @@
     width: 333px;
     height: 404px;
   }
+
+  .product-week__field {
+    padding-right: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .product-week {
     position: relative;
     justify-content: flex-start;
-    padding: 137px 4.35% 23px 8.43%;
+    padding: 135px 50px 23px 97px;
 
     background-position: 20px 0;
   }
@@ -165,7 +169,7 @@
 
   .product-week__list {
     width: 33%;
-    margin-top: 49px;
+    margin-top: 48px;
     margin-bottom: 111px;
     margin-left: 0;
   }
@@ -180,7 +184,7 @@
   }
 
   .product-week__price {
-    padding-left: 8.26%;
+    padding-left: 73px;
   }
 
   .product-week__image {
