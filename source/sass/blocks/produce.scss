@@ -6,6 +6,14 @@
   padding-top: 25px;
 
   border: 1px solid $color-border;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+  }
 }
 
 .produce__title {
@@ -31,11 +39,20 @@
   left: 80px;
 
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .produce__text {
   margin: 0;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-right: 40px;
   padding-left: 33px;
 
@@ -55,15 +72,15 @@
 
 @media (min-width: $tablet-width) {
   .produce {
-    width: auto;
-    margin: 0 6.5% 63px;
+    width: 86.8%;
+    margin-bottom: 63px;
     padding-top: 0;
   }
 
   .produce__title {
     padding-top: 26px;
     padding-bottom: 33px;
-    padding-left: 15.75%;
+    padding-left: 105px;
 
     font-size: 20px;
 
@@ -87,7 +104,7 @@
   }
 
   .produce__text {
-    padding: 0 6% 0;
+    padding: 0 39px 0;
 
     font-size: 15px;
     line-height: 30px;
@@ -98,36 +115,27 @@
     align-self: center;
     width: 584px;
     height: 52px;
-    margin: 35px 5.45% 46px;
+    margin: 35px 42px 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .produce {
+    width: 91.5%;
     position: relative;
     min-height: 455px;
-    align-items: flex-end;
-    margin-top: 4px;
-    margin-bottom: 106px;
-    margin-left: 4.34%;
-    padding-right: 4.96%;
-    padding-left: 66.09%;
-  }
-
-  .produce:hover {
-    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
-  }
-
-  .produce:active {
-    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+    align-items: center;
+    margin: 4px auto 106px;
+    padding-right: 52px;
+    padding-left: 760px;
   }
 
   .produce__title {
     padding: 0;
     padding-top: 95px;
-    padding-bottom: 34px;
+    padding-bottom: 33px;
 
-    background-position: 0 47px;
+    background-position: 0 41px;
   }
 
   .produce__video {
@@ -139,17 +147,6 @@
 
   .produce__image {
     width: 682px;
-  }
-
-  .produce__icon {
-    &:hover {
-      transform: scale(1.2);
-    }
-
-    &:active {
-      transform: scale(0.8);
-      opacity: 0.3;
-    }
   }
 
   .produce__text {
