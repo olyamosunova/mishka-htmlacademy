@@ -94,7 +94,7 @@
   }
 
   .radio__input {
-    &:checked + label:after {
+    &:checked + label::after {
       top: 2px;
       left: 21px;
     }
