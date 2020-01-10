@@ -5,19 +5,17 @@
 }
 
 .contact-details__category {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-top: 9px;
   color: $color-secondary;
   text-transform: uppercase;
 
   &::after {
     content: "";
-    width: 76%;
+    flex-grow: 1;
+    margin-left: 25px;
     height: 1px;
-
-    position: absolute;
-    top: 50%;
-    right: 0;
 
     background-color: $color-secondary;
   }
@@ -28,7 +26,6 @@
   padding: 19px 0 18px 0;
   margin-bottom: 24px;
 
-  @include input-field;
   background: transparent;
 
   &--phone {
@@ -42,6 +39,23 @@
 
   &::placeholder {
     color: $color-placeholder;
+  }
+
+  &:hover {
+    border-color: $control-hover;
+
+    & + .contact-details__icon {
+      fill: $control-hover;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $control-hover;
+
+    & + .contact-details__icon {
+      fill: $control-hover;
+    }
   }
 }
 
@@ -69,7 +83,8 @@
   }
 
   .contact-details__category {
-    margin-left: 6.5%;
+    align-items: flex-start;
+    margin-left: 52px;
 
     font-size: 17px;
     line-height: 17px;
@@ -81,7 +96,7 @@
 
   .contact-details__input {
     width: 65%;
-    margin-right: 6.5%;
+    margin-right: 50px;
     margin-left: auto;
     padding-top: 0;
     padding-bottom: 16px;
@@ -93,10 +108,10 @@
 
   .contact-details__icon {
     top: 0;
-    right: 10.03%;
+    right: 84px;
 
     &--email {
-      right: 9.38%;
+      right: 80px;
     }
   }
 }
@@ -106,37 +121,26 @@
     margin-top: 12px;
   }
 
+  .contact-details__item {
+    margin-bottom: 11px;
+  }
+
   .contact-details__category {
-    margin-left: 9.65%;
+    margin-top: 5px;
+    margin-left: 112px;
   }
 
   .contact-details__icon {
-    right: 20.25%;
+    right: 232px;
 
     &--email {
-      right: 19.83%;
+      right: 228px;
     }
   }
 
   .contact-details__input {
     width: 61%;
-    margin-right: 19.57%;
-
-    &:hover {
-      border-color: $control-hover;
-
-      & + .contact-details__icon {
-        fill: $control-hover;
-      }
-    }
-
-    &:focus {
-      outline: none;
-      border-color: $control-hover;
-
-      & + .contact-details__icon {
-        fill: $control-hover;
-      }
-    }
+    margin-right: 225px;
+    padding-bottom: 13px;
   }
 }

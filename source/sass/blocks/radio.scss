@@ -7,6 +7,18 @@
 
 .radio__input {
   margin: 0;
+
+  &:hover + label::before {
+    border-color: $control-hover;
+  }
+
+  &:focus + label::before {
+    border-color: $control-active;
+  }
+
+  &:active + label::before {
+    border-color: $control-active;
+  }
 }
 
 .radio__label {
@@ -72,20 +84,19 @@
 
 @media (min-width: $desktop-width) {
   .radio__label {
+    padding-top: 2px;
     padding-left: 86px;
   }
 
+  .radio__input + label::before {
+    top: -13px;
+    left: 6px;
+  }
+
   .radio__input {
-    &:hover + label::before {
-      border-color: $control-hover;
-    }
-
-    &:focus + label::before {
-      border-color: $control-active;
-    }
-
-    &:active + label::before {
-      border-color: $control-active;
+    &:checked + label:after {
+      top: 2px;
+      left: 21px;
     }
   }
 }

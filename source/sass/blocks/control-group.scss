@@ -1,5 +1,6 @@
 .control-group__title {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin: 0;
 
   color: $color-secondary;
@@ -7,12 +8,9 @@
 
   &::after {
     content: "";
-    width: 76%;
+    flex-grow: 1;
+    margin-left: 25px;
     height: 1px;
-
-    position: absolute;
-    top: 50%;
-    right: 0;
 
     background-color: $color-secondary;
   }
@@ -27,7 +25,8 @@
   }
 
   .control-group__title {
-    padding-left: 6.5%;
+    align-items: flex-start;
+    padding-left: 52px;
 
     font-size: 17px;
     line-height: 17px;
@@ -44,7 +43,7 @@
 
 @media (min-width: $desktop-width) {
   .control-group {
-    padding-top: 71px;
+    padding-top: 70px;
   }
 
   .control-group__item {
@@ -52,6 +51,6 @@
   }
 
   .control-group__title {
-    padding-left: 9.65%;
+    padding-left: 112px;
   }
 }

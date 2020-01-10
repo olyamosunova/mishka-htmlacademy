@@ -1,7 +1,7 @@
 .form {
   width: 100%;
   margin-bottom: 55px;
-  padding: 0 9.4%;
+  padding: 0 30px;
 
   font-size: 17px;
   line-height: 18px;
@@ -15,19 +15,17 @@
 }
 
 .form__category {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-top: 8px;
   color: $color-secondary;
   text-transform: uppercase;
 
   &::after {
     content: "";
-    width: 76%;
+    flex-grow: 1;
+    margin-left: 25px;
     height: 1px;
-
-    position: absolute;
-    top: 50%;
-    right: 0;
 
     background-color: $color-secondary;
   }
@@ -40,8 +38,6 @@
   margin-bottom: 14px;
   padding: 14px 0 0 15px;
 
-  @include input-field;
-
   border: 2px solid $color-main;
   resize: none;
 
@@ -50,6 +46,15 @@
   }
 
   overflow: auto;
+
+  &:hover {
+    border-color: $control-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $control-hover;
+  }
 }
 
 .form__legend {
@@ -80,9 +85,10 @@
   }
 
   .form__category {
+    align-items: flex-start;
     margin: 0;
     margin-top: 16px;
-    margin-left: 6.5%;
+    margin-left: 50px;
 
     font-size: 17px;
     line-height: 17px;
@@ -123,7 +129,7 @@
     width: 29.95%;
     align-self: flex-start;
     margin-top: 26px;
-    margin-left: 6.5%;
+    margin-left: 50px;
   }
 
   .form__legend {
@@ -139,30 +145,26 @@
 @media (min-width: $desktop-width) {
   .form__item {
     margin-bottom: 5px;
+
+    &:last-of-type {
+      padding-top: 52px;
+    }
   }
 
   .form__category {
-    margin-left: 9.65%;
+    margin-left: 112px;
   }
 
   .form__textarea {
     width: 61%;
-    margin-right: 19.57%;
+    margin-right: 225px;
     padding-top: 11px;
-
-    &:hover {
-      border-color: $control-hover;
-    }
-
-    &:focus {
-      outline: none;
-      border-color: $control-hover;
-    }
   }
 
   .form__submit {
+    width: 19.95%;
     margin-top: 28px;
-    margin-left: 19.57%;
+    margin-left: 225px;
   }
 
   .form__legend {

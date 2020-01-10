@@ -31,12 +31,24 @@
   background-size: 22px 16px;
 }
 
+.checkbox__input:hover + .checkbox__label::before {
+  border-color: $control-hover;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  border-color: $control-active;
+}
+
+.checkbox__input:active + .checkbox__label::before {
+  border-color: $control-active;
+}
+
 @media (min-width: $tablet-width) {
   .checkbox {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    padding-right: 3.9%;
+    padding-right: 30px;
   }
 
   .checkbox__label {
@@ -59,19 +71,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .checkbox {
+    padding-right: 50px;
+  }
+
   .checkbox__label {
     width: 30%;
+    padding-left: 86px;
   }
 
-  .checkbox__input:hover + .checkbox__label::before {
-    border-color: $control-hover;
-  }
-
-  .checkbox__input:focus + .checkbox__label::before {
-    border-color: $control-active;
-  }
-
-  .checkbox__input:active + .checkbox__label::before {
-    border-color: $control-active;
+  .checkbox__input + .checkbox__label::before {
+    top: -16px;
+    left: 5px;
   }
 }
