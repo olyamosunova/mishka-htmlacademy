@@ -26,6 +26,10 @@
   border: 2px solid $color-border;
 
   cursor: pointer;
+
+  &:hover {
+    border-color: $control-active;
+  }
 }
 
 .form-add__field:checked + .form-add__label {
@@ -76,13 +80,5 @@
   .form-add__button {
     width: 100%;
     margin-top: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-add__label {
-    &:hover {
-      border-color: $control-active;
-    }
   }
 }

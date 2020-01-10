@@ -18,10 +18,10 @@
   color: $black;
   text-align: center;
 
-  background-color: $gray;
+  background-color: $gray-title-bg;
 
   &--index {
-    padding: 73px 38px 122px;
+    padding: 73px 38px 120px;
     background: $gray-title-bg url("../../img/hero-mobile@1x.jpg") center -13px no-repeat;
   }
 }
@@ -53,12 +53,16 @@
     padding-top: 95px;
     padding-bottom: 95px;
 
+    background: $gray url("../../img/bg-zigzag-fill.svg") left bottom;
+    background-repeat: repeat-x;
+
     &--index {
       padding: 154px 127px 485px;
 
       white-space: normal;
 
-      background: url("../../img/hero-tablet@1x.jpg") center top no-repeat;
+      background: url("../../img/hero-tablet@1x.jpg") center top no-repeat,
+       transparent url("../../img/bg-zigzag-fill.svg") left bottom repeat-x;
     }
     font-size: 43px;
     line-height: 50px;
@@ -67,12 +71,10 @@
   .page-main__text {
     width: 100%;
     margin-top: -24px;
-    padding: 84px 13.67% 6px 6.5%;
+    padding: 84px 105px 6px 51px;
 
     font-size: 17px;
     line-height: 30px;
-
-    background: url("../../img/bg-zigzag-fill.svg") left top;
 
     white-space: normal;
   }
@@ -93,6 +95,6 @@
 
   .page-main__text {
     width: 100%;
-    padding: 138px 22% 0 19.57%;
+    padding: 138px 253px 0 225px;
   }
 }

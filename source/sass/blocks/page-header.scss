@@ -1,7 +1,6 @@
 .page-header {
   width: auto;
   padding-top: 22px;
-  padding-bottom: 21px;
   position: relative;
 }
 
@@ -10,6 +9,14 @@
   height: 35px;
   display: block;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +31,7 @@
     padding-top: 22px;
     width: 112px;
     height: 46px;
-    margin-left: 6.77%;
+    margin-left: 51px;
   }
 }
 
@@ -40,13 +47,5 @@
     width: 149px;
     height: 72px;
     z-index: 2;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:focus {
-      opacity: 0.3;
-    }
   }
 }

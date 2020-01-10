@@ -11,6 +11,18 @@
 .customer-list__link {
   padding-right: 60px;
   color: $black;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:focus {
+    color: $link-down;
+  }
+
+  &:active {
+    color: $link-down;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -18,19 +30,5 @@
     display: flex;
 
     z-index: 3;
-  }
-
-  .customer-list__link {
-    &:hover {
-      color: $link-hover;
-    }
-
-    &:focus {
-      color: $link-down;
-    }
-
-    &:active {
-      color: $link-down;
-    }
   }
 }
