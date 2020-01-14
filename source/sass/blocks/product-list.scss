@@ -112,7 +112,7 @@
   .product-list {
     width: 86.8%;
     margin: 0 auto 0;
-    padding: 68px 0 0;
+    padding: 65px 0 0;
   }
 
   .product-list__item {
@@ -124,13 +124,13 @@
 
   .product-list__info {
     width: calc(100% - 334px);
-    padding: 23px 33px 17px 25px;
+    padding: 26px 33px 17px 25px;
   }
 
   .product-list__image {
     display: block;
-    width: 334px;
-    height: 334px;
+/*    width: 334px;
+    height: 334px;*/
   }
 
   .product-list__title {
@@ -182,7 +182,7 @@
   .product-list__info {
     width: 100%;
     min-height: 197px;
-    padding-top: 27px;
+    padding-top: 31px;
     padding-bottom: 14px;
   }
 
@@ -194,9 +194,9 @@
   .product-list__description {
     margin: 0;
   }
-
+/*
   .product-list__image {
     width: 316px;
     height: 462px;
-  }
+  }*/
 }
