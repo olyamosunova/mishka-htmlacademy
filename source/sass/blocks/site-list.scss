@@ -4,17 +4,29 @@
 }
 
 .site-list__item {
-  padding-top: 32px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 28px;
   box-shadow: 0 1px 0 0 $color-border, inset 0 1px 0 0 $color-border;
 }
 
 .site-list__link {
-  padding-left: 77px;
+  padding-left: 76px;
 
   font-size: 17px;
   font-weight: $font-weight-bold;
   color: $black;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:focus {
+    color: $link-down;
+  }
+
+  &:active {
+    color: $link-down;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -23,8 +35,8 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 70px;
-    left: -319px;
+    top: 79px;
+    left: 49px;
   }
 
   .site-list__link {
@@ -45,6 +57,7 @@
   }
 
   .site-list__item {
+    padding-top: 31px;
     padding-right: 35px;
 
     &--catalog {

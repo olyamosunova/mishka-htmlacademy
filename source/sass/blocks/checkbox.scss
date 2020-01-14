@@ -1,13 +1,16 @@
 .checkbox {
   display: flex;
   flex-direction: column;
+  margin-top: 23px;
+  margin-bottom: 10px;
 }
 
 .checkbox__label {
   position: relative;
+  margin-bottom: 19px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 63px;
-  padding-bottom: 34px;
-
   cursor: pointer;
 }
 
@@ -28,26 +31,57 @@
   background-size: 22px 16px;
 }
 
+.checkbox__input:hover + .checkbox__label::before {
+  border-color: $control-hover;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  border-color: $control-active;
+}
+
+.checkbox__input:active + .checkbox__label::before {
+  border-color: $control-active;
+}
+
 @media (min-width: $tablet-width) {
   .checkbox {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 462px;
-    padding: 0;
+    margin: 0;
+    padding-right: 30px;
   }
 
   .checkbox__label {
     width: 50%;
-    padding-top: 10px;
+    margin-bottom: 44px;
+    padding-top: 0;
+    padding-left: 83px;
+  }
+
+  .checkbox__input + .checkbox__label::before {
+    width: 54px;
+    height: 52px;
+    top: -14px;
+    left: 3px;
+  }
+
+  .checkbox__input:checked + .checkbox__label::before {
+    background-size: 33px 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox {
-    width: 100%;
+    padding-right: 50px;
   }
 
   .checkbox__label {
     width: 30%;
+    padding-left: 86px;
+  }
+
+  .checkbox__input + .checkbox__label::before {
+    top: -16px;
+    left: 5px;
   }
 }

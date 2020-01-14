@@ -3,14 +3,15 @@
 }
 
 .user-list__item {
-  padding-top: 32px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 28px;
   box-shadow: 0 1px 0 0 $color-border, inset 0 1px 0 0 $color-border;
 }
 
 .user-list__link {
+  display: block;
   position: relative;
-  padding-left: 77px;
+  padding-left: 76px;
 
   font-size: 17px;
   font-weight: $font-weight-bold;
@@ -18,8 +19,33 @@
 
   svg {
     position: absolute;
-    top: 0;
-    left: 33px;
+    top: 5px;
+    left: 31px;
+  }
+
+  &:hover {
+    color: $link-hover;
+
+    svg {
+      fill: $color-secondary;
+    }
+  }
+
+  &:focus {
+    color: $link-down;
+
+    svg {
+      fill: $color-secondary;
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    color: $link-down;
+
+    svg {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -28,6 +54,7 @@
     width: 399px;
     display: flex;
     justify-content: flex-start;
+    margin-left: auto;
   }
 
   .user-list__description {
@@ -35,11 +62,29 @@
   }
 
   .user-list__item {
+    padding-top: 31px;
+    padding-bottom: 32px;
+
     box-shadow: none;
     border-left: 1px solid $color-border;
 
     &--search {
       width: 82px;
     }
+  }
+
+  .user-list__link {
+    padding-left: 85px;
+
+    svg {
+      top: 4px;
+      left: 33px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link {
+    padding-left: 83px;
   }
 }

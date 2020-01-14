@@ -3,13 +3,12 @@
 }
 
 .form-add__block {
-  margin-top: 25px;
-  margin-bottom: 31px;
+  margin-top: 12px;
 }
 
 .form-add__text {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 37px;
 
   line-height: 30px;
   text-align: center;
@@ -27,6 +26,10 @@
   border: 2px solid $color-border;
 
   cursor: pointer;
+
+  &:hover {
+    border-color: $control-active;
+  }
 }
 
 .form-add__field:checked + .form-add__label {
@@ -34,7 +37,7 @@
 }
 
 .form-add__button {
-  margin-top: 15px;
+  margin-top: 44px;
   padding-top: 20px;
   padding-bottom: 16px;
 
@@ -56,12 +59,16 @@
     width: 100%;
   }
 
+  .form-add__block {
+    width: 350px;
+  }
+
   .form-add__choice {
     display: flex;
     justify-content: space-between;
     align-self: flex-start;
     width: 100%;
-    margin-top: 26px;
+    margin-top: 22px;
   }
 
   .form-add__label {
@@ -75,6 +82,7 @@
   }
 
   .form-add__button {
-    margin: 0;
+    width: 100%;
+    margin-top: 30px;
   }
 }

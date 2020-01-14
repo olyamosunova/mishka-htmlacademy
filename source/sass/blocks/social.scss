@@ -1,5 +1,7 @@
 .social {
-  padding: 30px 62px 30px 57px;
+  padding: 30px 62px 17px 57px;
+
+  border-bottom: 1px solid $gray-darken;
 }
 
 .social__list {
@@ -11,10 +13,28 @@
   list-style: none;
 }
 
+.social__link {
+  &:hover .social__icon {
+    fill: $email-hover;
+  }
+
+  &:focus {
+    outline: none;
+
+    & .social__icon {
+      fill: $email-hover;
+      opacity: 0.3;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social {
     width: 141px;
     padding: 0;
-    padding-top: 22px;
+    margin-left: 78px;
+    margin-top: 35px;
+
+    border: none;
   }
 }

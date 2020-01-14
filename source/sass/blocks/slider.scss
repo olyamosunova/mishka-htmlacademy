@@ -1,12 +1,12 @@
 .slider__list {
   @include list;
-  padding-top: 25px;
-  padding-bottom: 31px;
+  margin-top: 23px;
+  margin-bottom: 29px;
 }
 
 .slider__text {
   margin: 0;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
 
   line-height: 30px;
   text-align: left;
@@ -18,26 +18,45 @@
 }
 
 .slider__author-id {
+  display: block;
+  margin-top: 4px;
+
+  font-size: 17px;
   line-height: 30px;
 }
 
 .slider__toggles {
   display: flex;
   margin: 0;
+
+  border: 1px solid #ececec;
 }
 
 .slider__toggle {
-  width: 130px;
+  width: 50%;
   height: 52px;
+  padding: 0;
 
   @include button;
   background: url("../../img/icon-left-arrow.svg") no-repeat center;
-  border: 1px solid $color-border;
 
   &--next {
     background-image: url("../../img/icon-right-arrow.svg");
   }
   cursor: pointer;
+
+  &:first-of-type {
+    border-right: 1px solid #ececec;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -47,7 +66,8 @@
 
   .slider__list {
     padding: 0;
-    padding-top: 56px;
+    margin-top: 49px;
+    padding-left: 4px;
 
     font-size: 17px;
   }
@@ -58,30 +78,58 @@
   }
 
   .slider__text {
-    padding-bottom: 56px;
+    margin-bottom: 58px;
+  }
+
+  .slider__author-name {
+    font-size: 18px;
+  }
+
+  .slider__author-id {
+    margin-top: 2px;
+    padding: 0;
+
+    letter-spacing: 0;
   }
 
   .slider__toggles {
     width: 137px;
     justify-content: space-between;
     position: absolute;
-    bottom: 62px;
-    right: 71px;
+    bottom: 99px;
+    right: 69px;
+
+    border: none;
   }
 
   .slider__toggle {
     width: 50px;
     height: 26px;
-    border: none;
+
+    &:first-of-type {
+      border: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .slider__list {
+    margin-top: 20px;
+    margin-bottom: 67px;
+  }
+
   .slider__text {
+    margin-bottom: 38px;
+
     white-space: pre-line;
   }
 
+  .slider__author-id {
+    margin-top: 4px;
+  }
+
   .slider__toggles {
-    right: 19px;
+    bottom: 145px;
+    right: 69px;
   }
 }

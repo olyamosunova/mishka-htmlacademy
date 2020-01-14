@@ -1,28 +1,40 @@
 .copyright {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 3px 35px 23px 39px;
-
-  border-top: 1px solid $gray-darken;
+  align-self: center;
+  padding: 23px 0;
 }
 
 .copyright__text {
-  padding-right: 30px;
-
+  margin-right: 19px;
   font-size: 19px;
   line-height: 18px;
   font-weight: $font-weight-bold;
   color: $black;
 }
 
+.copyright__image {
+  vertical-align: middle;
+}
+
 .copyright__link {
-  padding-top: 22px;
+  &:hover {
+    & .copyright__image {
+      fill: $email-hover;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     padding: 0;
-
-    border: none;
+    margin: 0;
+    margin-top: 21px;
   }
 }
