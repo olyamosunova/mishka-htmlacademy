@@ -15,9 +15,8 @@
   &--dark {
     background-color: $color-secondary-dark;
 
-    .catalog-list__image {
-      right: 26px;
-      bottom: 17.12%;
+    .catalog-list__link {
+      background: url("../../img/icon-toy.svg") 90.25% 54% no-repeat;
     }
   }
 }
@@ -34,14 +33,8 @@
   font-weight: $font-weight-bold;
   text-align: left;
   color: $white;
-}
 
-.catalog-list__image {
-  position: absolute;
-  bottom: 12.27%;
-  right: 36px;
-
-  fill: $catalog-icon-color;
+  background: url("../../img/icon-interior.svg") 87.25% 62% no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,24 +48,20 @@
   .catalog-list__item {
     width: 50%;
     min-height: 107px;
+
+    &--dark {
+      .catalog-list__link {
+        background-position-x: 87.25%;
+      }
+    }
   }
 
   .catalog-list__link {
     padding-left: 34px;
     font-size: 20px;
     line-height: 30px;
-  }
 
-  .catalog-list__image {
-    top: 25%;
-    bottom: 0;
-    right: 38px;
-  }
-
-  .catalog-list__item--dark {
-    .catalog-list__image {
-      right: 36px;
-    }
+    background-position-y: 58%;
   }
 }
 
@@ -89,6 +78,12 @@
   .catalog-list__item {
     min-height: 119px;
 
+    &--dark {
+      .catalog-list__link {
+        background-position: 92% 53%;
+      }
+    }
+
     &:hover {
       transform: scale(1, 1.04);
     }
@@ -96,6 +91,8 @@
 
   .catalog-list__link {
     padding: 5% 306px 6.24% 36px;
+
+    background-position: 92% 53%;
 
     &:hover {
       padding-bottom: 35px;
