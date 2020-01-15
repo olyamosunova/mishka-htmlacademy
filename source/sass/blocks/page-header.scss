@@ -42,10 +42,11 @@
 
   .page-header__logo {
     position: absolute;
-    top: 0;
+    top: -14px;
     left: calc(50% - 74px);
     width: 149px;
     height: 72px;
+    margin-left: 0;
     z-index: 2;
   }
 }
