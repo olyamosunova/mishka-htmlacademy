@@ -93,19 +93,24 @@
   cursor: pointer;
 
   &:hover {
-    svg {
+    .product-list__buy-icon {
       fill: $color-secondary;
+      opacity: 1;
     }
   }
 
   &:focus {
     outline: none;
 
-    svg {
+    .product-list__buy-icon {
       fill: $color-secondary;
       opacity: 0.3;
     }
   }
+}
+
+.product-list__buy-icon {
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {
@@ -129,6 +134,8 @@
 
   .product-list__image {
     display: block;
+    width: 334px;
+    height: 334px;
   }
 
   .product-list__title {
@@ -182,6 +189,11 @@
     min-height: 197px;
     padding-top: 31px;
     padding-bottom: 14px;
+  }
+
+  .product-list__image {
+    width: 316px;
+    height: 462px;
   }
 
   .product-list__purchase {

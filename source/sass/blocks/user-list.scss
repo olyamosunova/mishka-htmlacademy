@@ -17,16 +17,10 @@
   font-weight: $font-weight-bold;
   color: $black;
 
-  svg {
-    position: absolute;
-    top: 5px;
-    left: 31px;
-  }
-
   &:hover {
     color: $link-hover;
 
-    svg {
+    .user-list__link-icon {
       fill: $color-secondary;
     }
   }
@@ -34,7 +28,7 @@
   &:focus {
     color: $link-down;
 
-    svg {
+    .user-list__link-icon {
       fill: $color-secondary;
       opacity: 0.3;
     }
@@ -43,10 +37,18 @@
   &:active {
     color: $link-down;
 
-    svg {
+    .user-list__link-icon {
       opacity: 0.3;
     }
   }
+}
+
+.user-list__link-icon {
+  position: absolute;
+  top: 5px;
+  left: 31px;
+
+  fill: #ececec;
 }
 
 @media (min-width: $tablet-width) {
