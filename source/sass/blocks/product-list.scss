@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 30px;
   padding-bottom: 0;
+  width: 100%;
 
   list-style: none;
 }
@@ -27,7 +28,7 @@
 .product-list__info {
   display: flex;
   flex-direction: column;
-  padding: 22px 0 27px 26px;
+  padding: 22px 27px 27px 26px;
 }
 
 .product-list__description {
@@ -68,7 +69,7 @@
 }
 
 .product-list__purchase {
-  width: 204px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   padding-top: 21px;
