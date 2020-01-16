@@ -58,11 +58,11 @@
     padding-top: 95px;
     padding-bottom: 95px;
 
-    background: $gray url("../../img/bg-zigzag-fill.svg") left bottom;
-    background-repeat: repeat-x;
+    background: $gray url("../../img/bg-zigzag-fill.svg") left bottom repeat-x;
+    background-size: 770px 24px;
 
     &--index {
-      padding: 154px 127px 485px;
+      padding: 154px 127px 491px;
 
       white-space: normal;
 
@@ -94,9 +94,11 @@
 @media (min-width: $desktop-width) {
   .page-main__title {
     padding-top: 97px;
-    padding-bottom: 110px;
+    padding-bottom: 117px;
     font-size: 53px;
     line-height: 57px;
+
+    background-size: 1150px 34px;
 
     &--index {
       padding: 156px 268px 498px;
@@ -111,6 +113,6 @@
 
   .page-main__text {
     width: 100%;
-    padding: 138px 253px 0 225px;
+    padding: 130px 253px 0 225px;
   }
 }

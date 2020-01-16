@@ -105,14 +105,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 97%;
   }
 
   .contacts__field {
-    padding-right: 20px;
+    width: 25%;
   }
 
   .contacts__value {
-    width: 238px;
+    width: 247px;
   }
 
   .contacts__map {
@@ -126,7 +127,8 @@
     margin: 0;
     margin-top: 55px;
     padding: 14px 0;
-    padding-left: 7px;
+
+    font-size: 17px;
   }
 }
 
@@ -137,8 +139,8 @@
     padding-bottom: 105px;
     padding-left: 220px;
 
-    background-size: 1050px 23px;
-    background-position: 50px 0;
+    background-size: 1052px 23px;
+    background-position: 23px 0;
 
     &::before {
       top: 155px;
@@ -178,6 +180,10 @@
   }
 
   .contacts__field {
-    padding-right: 23px;
+    width: 23.3%;
+  }
+
+  .contacts__write {
+    padding-top: 16px;
   }
 }
