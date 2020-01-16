@@ -93,6 +93,12 @@
     order: -1;
   }
 
+  .produce__pictures {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .produce__image {
     width: 668px;
     height: 455px;
@@ -100,7 +106,7 @@
 
   .produce__icon {
     top: 189px;
-    left: 283px;
+    left: calc(50% - 51px);
   }
 
   .produce__text {
