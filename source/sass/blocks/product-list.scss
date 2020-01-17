@@ -38,8 +38,10 @@
 .product-list__link {
   color: $black;
 
-  &:hover .product-list__title {
-    opacity: 0.6;
+  &:hover {
+    .product-list__title {
+      opacity: 0.6;
+    }
   }
 
   &:focus {
