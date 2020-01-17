@@ -5,7 +5,7 @@
   top: 30px;
   right: 30px;
 
-  background: url("../../img/icon-menu-open.svg") no-repeat;
+  background: url("../img/icon-menu-open.svg") no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -24,7 +24,7 @@
 
 .main-nav--opened .main-nav__toggle {
   height: 20px;
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
 }
 
 .main-nav--nojs .main-nav__toggle {

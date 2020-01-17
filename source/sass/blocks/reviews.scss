@@ -31,10 +31,10 @@
     flex-direction: column;
     padding: 77px 52px 53px 44px;
 
-    background: $white url("../../img/review@1x.jpg") left top no-repeat;
+    background: $white url("../img/review@1x.jpg") left top no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/review@2x.jpg") left top no-repeat;
+      background: url("../img/review@2x.jpg") left top no-repeat;
       background-size: 350px 457px;
     }
   }

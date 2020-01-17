@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 29px;
 
-  background: url("../../img/bg-zigzag-line.svg") -5px top repeat-x;
+  background: url("../img/bg-zigzag-line.svg") -5px top repeat-x;
   background-size: auto 6px;
 }
 
@@ -34,27 +34,27 @@
   background: 10px 1px no-repeat;
 
   &--ecology {
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--price {
-    background-image: url("../../img/icon-feature-money.svg");
+    background-image: url("../img/icon-feature-money.svg");
   }
 
   &--like {
-    background-image: url("../../img/icon-feature-heart.svg");
+    background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--handmade {
-    background-image: url("../../img/icon-feature-ball.svg");
+    background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--home-product {
-    background-image: url("../../img/icon-feature-rocket.svg");
+    background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--present {
-    background-image: url("../../img/icon-feature-gift.svg");
+    background-image: url("../img/icon-feature-gift.svg");
   }
 
   &:nth-child(odd) {

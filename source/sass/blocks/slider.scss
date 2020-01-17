@@ -38,10 +38,10 @@
   padding: 0;
 
   @include button;
-  background: url("../../img/icon-left-arrow.svg") no-repeat center;
+  background: url("../img/icon-left-arrow.svg") no-repeat center;
 
   &--next {
-    background-image: url("../../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
   }
   cursor: pointer;
 
