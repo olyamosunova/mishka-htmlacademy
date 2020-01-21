@@ -1,38 +1,22 @@
-.radio {
-  display: flex;
-  flex-direction: column;
-  margin-top: 23px;
-  margin-bottom: 29px;
+.radio1 {
+  margin-top: 20px;
 }
 
-.radio__input {
-  margin: 0;
-
-  &:hover + label::before {
-    border-color: $control-hover;
-  }
-
-  &:focus + label::before {
-    border-color: $control-active;
-  }
-
-  &:active + label::before {
-    border-color: $control-active;
-  }
-}
-
-.radio__label {
+.radio1__label {
   position: relative;
-  padding-top: 10px;
   padding-left: 62px;
-  padding-bottom: 14px;
+  padding-top: 8px;
+  margin-bottom: 14px;
 
-  cursor: pointer;
+  line-height: 19px;
+
+  &:last-child {
+    margin-bottom: 19px;
+  }
 }
 
-.radio__input + label::before {
+.radio1__input + label::before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
@@ -43,9 +27,8 @@
   border-radius: 50%;
 }
 
-.radio__input:checked + label::after {
+.radio1__input:checked + label::after {
   content: "";
-
   position: absolute;
   top: 12px;
   left: 12px;
@@ -57,46 +40,26 @@
 }
 
 @media (min-width: $tablet-width) {
-  .radio {
-    margin: 0;
+  .radio1 {
+    margin-top: 0;
   }
 
-  .radio__label {
-    padding-top: 0;
-    padding-bottom: 56px;
-    padding-left: 82px;
+  .radio1__label {
+    margin-bottom: 49px;
+    padding-left: 80px;
   }
 
-  .radio__input + label::before {
-    top: -15px;
-    left: 2px;
+  .radio1__input + label::before {
+    top: -8px;
+    left: 0;
     width: 52px;
     height: 53px;
   }
 
-  .radio__input:checked + label::after {
-    top: 0;
-    left: 17px;
+  .radio1__input:checked + label::after {
+    top: 8px;
+    left: 15px;
     width: 22px;
     height: 22px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .radio__label {
-    padding-top: 2px;
-    padding-left: 86px;
-  }
-
-  .radio__input + label::before {
-    top: -13px;
-    left: 6px;
-  }
-
-  .radio__input {
-    &:checked + label::after {
-      top: 2px;
-      left: 21px;
-    }
   }
 }

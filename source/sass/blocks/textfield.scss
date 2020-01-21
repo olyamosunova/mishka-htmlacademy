@@ -1,71 +1,63 @@
-.textfield {
-  display: flex;
-  flex-direction: column;
-  margin-top: 28px;
+.textfield1 {
+  margin-top: 22px;
+  margin-bottom: 27px;
 }
 
-.textfield__block {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
+.textfield1__input {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  margin-bottom: 19px;
 
-.textfield__input {
-  box-sizing: border-box;
-  padding: 15px 0 16px 0;
+  font-family: $font-family;
+  font-size: 17px;
+  line-height: 18px;
 
-  line-height: 20px;
-  color: $color-main;
-
-  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid $black;
 
   &::placeholder {
     color: $color-placeholder;
   }
 
-  &:hover {
-    border-color: $control-hover;
+  &:last-child {
+    margin-bottom: 0;
   }
+}
 
-  &:focus {
-    outline: none;
-    border-color: $control-hover;
+.textfield1__group {
+  margin-bottom: 19px;
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .textfield {
-    margin-top: 0;
-    padding-right: 50px;
+  .textfield1 {
+    margin-top: -17px;
+    margin-bottom: 0;
   }
 
-  .textfield__block {
+  .textfield1__group {
+    display: flex;
     flex-direction: row;
-    margin-bottom: 37px;
+    align-items: center;
   }
 
-  .textfield__input {
-    width: 100%;
-    margin-left: 26px;
-    padding-top: 0;
-    padding-bottom: 9px;
-    padding-left: 18px;
+  .textfield1__label {
+    margin-right: 25px;
+  }
 
+  .textfield1__input {
+    padding: 14px 0 15px 17px;
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .textfield {
-    padding-right: 225px;
-  }
-
-  .textfield__label {
-    margin-left: 8px;
-  }
-
-  .textfield__input {
-    margin-left: 24px;
+  .textfield1__group {
+    margin-right: 175px;
   }
 }
