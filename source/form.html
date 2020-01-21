@@ -67,79 +67,79 @@
     <main class="page-main">
       <h1 class="page-main__title page-main__title--form">Вязание на заказ</h1>
       <span class="page-main__note">Бесплатная доставка по России</span>
-      <form class="form1" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form1__title">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__title">
           Мы будем рады воплотить в жизнь
           ваши пожелания! Заполните простую
           форму заказа и мы свяжемся с вами,
           чтобы уточнить детали.
         </p>
-        <div class="form1__item">
-          <p class="form1__legend">Тип</p>
-          <div class="form1__group radio1">
-            <input class="radio1__input visually-hidden" id="accessory" type="radio" name="type" value="Аксессуар для интерьера" checked>
-            <label class="radio1__label" for="accessory">Аксессуар для интерьера</label>
-            <input class="radio1__input visually-hidden" id="toy" type="radio" name="type" value="Детская игрушка">
-            <label class="radio1__label" for="toy">Детская игрушка</label>
+        <div class="form__item">
+          <p class="form__legend">Тип</p>
+          <div class="form__group radio">
+            <input class="radio__input visually-hidden" id="accessory" type="radio" name="type" value="Аксессуар для интерьера" checked>
+            <label class="radio__label" for="accessory">Аксессуар для интерьера</label>
+            <input class="radio__input visually-hidden" id="toy" type="radio" name="type" value="Детская игрушка">
+            <label class="radio__label" for="toy">Детская игрушка</label>
           </div>
         </div>
-        <div class="form1__item">
-          <p class="form1__legend">Цвет</p>
-          <div class="form1__group checkbox1">
-            <input class="checkbox1__input visually-hidden" id="color-white" type="checkbox" name="color" value="Белый" checked>
-            <label class="checkbox1__label" for="color-white">Белый</label>
-            <input class="checkbox1__input visually-hidden" id="color-grey" type="checkbox" name="color" value="Серый" checked>
-            <label class="checkbox1__label" for="color-grey">Серый</label>
-            <input class="checkbox1__input visually-hidden" id="color-tiffany" type="checkbox" name="color" value="Тиффани">
-            <label class="checkbox1__label" for="color-tiffany">«Тиффани»</label>
-            <input class="checkbox1__input visually-hidden" id="color-black" type="checkbox" name="color" value="Черный">
-            <label class="checkbox1__label" for="color-black">Черный</label>
-            <input class="checkbox1__input visually-hidden" id="color-pink" type="checkbox" name="color" value="Розовый">
-            <label class="checkbox1__label" for="color-pink">Розовый</label>
-            <input class="checkbox1__input visually-hidden" id="color-orange" type="checkbox" name="color" value="Оранжевый">
-            <label class="checkbox1__label" for="color-orange">Оранжевый</label>
+        <div class="form__item">
+          <p class="form__legend">Цвет</p>
+          <div class="form__group checkbox">
+            <input class="checkbox__input visually-hidden" id="color-white" type="checkbox" name="color" value="Белый" checked>
+            <label class="checkbox__label" for="color-white">Белый</label>
+            <input class="checkbox__input visually-hidden" id="color-grey" type="checkbox" name="color" value="Серый" checked>
+            <label class="checkbox__label" for="color-grey">Серый</label>
+            <input class="checkbox__input visually-hidden" id="color-tiffany" type="checkbox" name="color" value="Тиффани">
+            <label class="checkbox__label" for="color-tiffany">«Тиффани»</label>
+            <input class="checkbox__input visually-hidden" id="color-black" type="checkbox" name="color" value="Черный">
+            <label class="checkbox__label" for="color-black">Черный</label>
+            <input class="checkbox__input visually-hidden" id="color-pink" type="checkbox" name="color" value="Розовый">
+            <label class="checkbox__label" for="color-pink">Розовый</label>
+            <input class="checkbox__input visually-hidden" id="color-orange" type="checkbox" name="color" value="Оранжевый">
+            <label class="checkbox__label" for="color-orange">Оранжевый</label>
           </div>
         </div>
-        <div class="form1__item">
-          <p class="form1__legend">ФИО</p>
-          <div class="form1__group textfield1">
-            <div class="textfield1__group">
-              <label class="textfield1__label" for="">Имя:</label>
-              <input class="textfield1__input" type="text" name="" value="" placeholder="Введите ваше имя*">
+        <div class="form__item">
+          <p class="form__legend">ФИО</p>
+          <div class="form__group textfield">
+            <div class="textfield__group">
+              <label class="textfield__label" for="user-name">Имя:</label>
+              <input class="textfield__input" id="user-name" type="text" name="" value="" placeholder="Введите ваше имя*">
             </div>
-            <div class="textfield1__group">
-              <label class="textfield1__label" for="">Фамилия:</label>
-              <input class="textfield1__input" type="text" name="" value="" placeholder="Укажите фамилию*">
+            <div class="textfield__group">
+              <label class="textfield__label" for="user-lastname">Фамилия:</label>
+              <input class="textfield__input" id="user-lastname" type="text" name="" value="" placeholder="Укажите фамилию*">
             </div>
-            <div class="textfield1__group">
-              <label class="textfield1__label" for="">Отчество:</label>
-              <input class="textfield1__input" type="text" name="" value="" placeholder="Отчество, если желаете">
+            <div class="textfield__group">
+              <label class="textfield__label" for="user-o">Отчество:</label>
+              <input class="textfield__input" id="user-o" type="text" name="" value="" placeholder="Отчество, если желаете">
             </div>
           </div>
         </div>
-        <div class="form1__item">
-          <p class="form1__legend">Тел</p>
-          <label class="form1__label" for=""></label>
-          <input class="form1__input form1__input--phone" type="tel" name="" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-          <svg class="form1__icon form1__icon--phone" width="24.829px" height="24.333px">
+        <div class="form__item">
+          <p class="form__legend">Тел</p>
+          <label class="form__label" for="user-phone"></label>
+          <input class="form__input form__input--phone" id="user-phone" type="tel" name="" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <svg class="form__icon form__icon--phone" width="24.829px" height="24.333px">
             <use xlink:href="#icon-phone"></use>
           </svg>
         </div>
-        <div class="form1__item form1__item--email">
-          <p class="form1__legend">E-mail</p>
-          <label class="form1__label" for=""></label>
-          <input class="form1__input form1__input--email" type="email" name="" value="" placeholder="Ваш Email*">
-          <svg class="form1__icon form1__icon--email" width="32px" height="32px">
+        <div class="form__item form__item--email">
+          <p class="form__legend">E-mail</p>
+          <label class="form__label" for="user_mail"></label>
+          <input class="form__input form__input--email" id="user_mail" type="email" name="" value="" placeholder="Ваш Email*">
+          <svg class="form__icon form__icon--email" width="32px" height="32px">
             <use xlink:href="#icon-mail"></use>
           </svg>
         </div>
-        <div class="form1__item">
-          <p class="form1__legend">Доп</p>
-          <label class="form1__label" for=""></label>
-          <textarea class="form1__textarea" name="name" rows="6" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="form__item">
+          <p class="form__legend">Доп</p>
+          <label class="form__label" for="add-info"></label>
+          <textarea class="form__textarea" id="add-info" name="name" rows="6" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <span class="form1__info">*Поля обязательны для заполнения</span>
-        <button class="form1__submit button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        <span class="form__info">*Поля обязательны для заполнения</span>
+        <button class="form__submit button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
       </form>
     </main>
     <footer class="page-footer">

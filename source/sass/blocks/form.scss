@@ -1,4 +1,4 @@
-.form1 {
+.form {
   width: 100%;
   padding: 0 30px;
 
@@ -7,12 +7,12 @@
   color: $black;
 }
 
-.form1__item {
+.form__item {
   position: relative;
   margin-top: 21px;
 }
 
-.form1__title {
+.form__title {
   margin: 0;
   margin-top: 23px;
   color: $color-main;
@@ -20,7 +20,7 @@
   font-weight: $font-weight-normal;
 }
 
-.form1__legend {
+.form__legend {
   display: flex;
   align-items: center;
   margin: 0;
@@ -38,12 +38,12 @@
   }
 }
 
-.form1__group {
+.form__group {
   display: flex;
   flex-direction: column;
 }
 
-.form1__input {
+.form__input {
   width: 100%;
   padding-top: 19px;
   padding-bottom: 16px;
@@ -52,6 +52,7 @@
   font-family: $font-family;
   font-size: 17px;
   line-height: 18px;
+  color: $color-main;
 
   border: none;
   border-bottom: 2px solid $black;
@@ -67,9 +68,28 @@
     font-size: 19px;
     line-height: 19px;
   }
+
+  &:hover {
+    border-color: $color-secondary;
+
+    & + .form__icon {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-secondary;
+
+    & + .form__icon {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+  }
 }
 
-.form1__icon {
+.form__icon {
   position: absolute;
   top: 38px;
   right: 8px;
@@ -81,7 +101,7 @@
   }
 }
 
-.form1__textarea {
+.form__textarea {
   width: 100%;
   min-height: 142px;
   margin-top: 21px;
@@ -92,22 +112,32 @@
   font-family: $font-family;
   font-size: 17px;
   line-height: 18px;
+  color: $color-main;
 
   border: 2px solid $black;
 
   &::placeholder {
     color: $color-placeholder;
   }
+
+  &:hover {
+    border-color: $color-secondary;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-secondary;
+  }
 }
 
-.form1__info {
+.form__info {
   font-size: 14px;
   line-height: 16px;
   color: $color-main;
   font-weight: $font-weight-normal;
 }
 
-.form1__submit {
+.form__submit {
   width: 100%;
   margin-top: 28px;
   margin-bottom: 56px;
@@ -118,20 +148,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form1 {
+  .form {
     position: relative;
     padding: 0;
     font-size: 19px;
   }
 
-  .form1__title {
+  .form__title {
     margin-top: 59px;
     padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
   }
 
-  .form1__legend {
+  .form__legend {
     margin-top: 6px;
 
     font-size: 17px;
@@ -141,11 +171,11 @@
     }
   }
 
-  .form1__group {
+  .form__group {
     width: 75%;
   }
 
-  .form1__item {
+  .form__item {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -165,7 +195,7 @@
       padding-bottom: 25px;
       background-color: $gray;
 
-      .form1__legend {
+      .form__legend {
         margin-top: 13px;
       }
     }
@@ -177,7 +207,7 @@
     }
   }
 
-  .form1__input {
+  .form__input {
     width: 75%;
 
     padding-top: 11px;
@@ -193,7 +223,7 @@
     }
   }
 
-  .form1__icon {
+  .form__icon {
     top: 59px;
     right: 77px;
 
@@ -203,7 +233,7 @@
     }
   }
 
-  .form1__textarea {
+  .form__textarea {
     width: 75%;
     margin-top: 0;
 
@@ -211,7 +241,7 @@
     line-height: 19px;
   }
 
-  .form1__info {
+  .form__info {
     position: absolute;
     bottom: 63px;
     right: 50px;
@@ -220,7 +250,7 @@
     line-height: 30px;
   }
 
-  .form1__submit {
+  .form__submit {
     width: 230px;
     margin-top: 23px;
     margin-bottom: 51px;
@@ -229,20 +259,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form1__item {
+  .form__item {
     padding-left: 112px;
   }
 
-  .form1__title {
+  .form__title {
     margin-top: 106px;
     padding: 0 225px;
   }
 
-  .form1__group {
+  .form__group {
     width: 88.5%;
   }
 
-  .form1__icon {
+  .form__icon {
     right: 234px;
 
     &--email {
@@ -250,23 +280,23 @@
     }
   }
 
-  .form1__input {
+  .form__input {
     width: 71%;
     margin-right: 175px;
   }
 
-  .form1__textarea {
+  .form__textarea {
     width: 71%;
     margin-right: 175px;
     padding-top: 12px;
     padding-left: 16px;
   }
 
-  .form1__info {
+  .form__info {
     right: 225px;
   }
 
-  .form1__submit {
+  .form__submit {
     margin-top: 19px;
     margin-left: 225px;
   }
