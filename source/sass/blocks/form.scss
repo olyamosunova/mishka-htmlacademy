@@ -10,6 +10,10 @@
 .form__item {
   position: relative;
   margin-top: 21px;
+
+  &:last-of-type {
+    margin-bottom: 5px;
+  }
 }
 
 .form__title {
@@ -66,7 +70,7 @@
     padding-bottom: 14px;
 
     font-size: 19px;
-    line-height: 19px;
+    line-height: 26px;
   }
 
   &:hover {
@@ -105,7 +109,6 @@
   width: 100%;
   min-height: 142px;
   margin-top: 21px;
-  margin-bottom: 5px;
   padding-top: 14px;
   padding-left: 14px;
 
@@ -213,6 +216,8 @@
     padding-top: 11px;
     padding-bottom: 13px;
     padding-left: 16px;
+
+    line-height: 26px;
 
     background-color: transparent;
 
