@@ -1,102 +1,82 @@
 .radio {
-  display: flex;
-  flex-direction: column;
-  margin-top: 23px;
-  margin-bottom: 29px;
-}
-
-.radio__input {
-  margin: 0;
-
-  &:hover + label::before {
-    border-color: $control-hover;
-  }
-
-  &:focus + label::before {
-    border-color: $control-active;
-  }
-
-  &:active + label::before {
-    border-color: $control-active;
-  }
+  margin-top: 20px;
 }
 
 .radio__label {
   position: relative;
-  padding-top: 10px;
   padding-left: 62px;
-  padding-bottom: 14px;
+  padding-top: 8px;
+  margin-bottom: 14px;
 
-  cursor: pointer;
+  line-height: 19px;
+
+  &:last-child {
+    margin-bottom: 19px;
+  }
 }
 
-.radio__input + label::before {
-  content: "";
+.radio__input {
+  & + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid $color-main;
+    border-radius: 50%;
+  }
 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border: 2px solid $color-main;
-  border-radius: 50%;
-}
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
 
-.radio__input:checked + label::after {
-  content: "";
+    background-color: $color-secondary;
+    border-radius: 50%;
+  }
 
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 16px;
-  height: 16px;
+  &:hover + label::before {
+    border-color: $color-secondary;
+  }
 
-  background-color: $color-secondary;
-  border-radius: 50%;
+  &:focus + label::before {
+    border-color: $color-secondary;
+  }
+
+  &:active + label::before {
+    border-color: $color-main;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .radio {
-    margin: 0;
+    margin-top: 0;
   }
 
   .radio__label {
-    padding-top: 0;
-    padding-bottom: 56px;
-    padding-left: 82px;
-  }
-
-  .radio__input + label::before {
-    top: -15px;
-    left: 2px;
-    width: 52px;
-    height: 53px;
-  }
-
-  .radio__input:checked + label::after {
-    top: 0;
-    left: 17px;
-    width: 22px;
-    height: 22px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .radio__label {
-    padding-top: 2px;
-    padding-left: 86px;
-  }
-
-  .radio__input + label::before {
-    top: -13px;
-    left: 6px;
+    margin-bottom: 49px;
+    padding-left: 80px;
   }
 
   .radio__input {
+    & + label::before {
+      top: -8px;
+      left: 0;
+      width: 52px;
+      height: 53px;
+    }
+
     &:checked + label::after {
-      top: 2px;
-      left: 21px;
+      top: 8px;
+      left: 15px;
+      width: 22px;
+      height: 22px;
     }
   }
 }

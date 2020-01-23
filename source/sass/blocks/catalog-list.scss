@@ -16,7 +16,7 @@
     background-color: $color-secondary-dark;
 
     .catalog-list__link {
-      background: url("../../img/icon-toy.svg") 90.25% 54% no-repeat;
+      background: url("../img/icon-toy.svg") 90.25% 54% no-repeat;
     }
   }
 }
@@ -34,15 +34,16 @@
   text-align: left;
   color: $white;
 
-  background: url("../../img/icon-interior.svg") 87.25% 62% no-repeat;
+  background: url("../img/icon-interior.svg") 87.25% 62% no-repeat;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-list {
     width: calc(100% - 104px);
+    height: 119px;
     display: flex;
     justify-content: center;
-    margin: -110px auto 0;
+    margin: -116px auto 0;
   }
 
   .catalog-list__item {
@@ -51,7 +52,9 @@
 
     &--dark {
       .catalog-list__link {
-        background-position-x: 87.25%;
+        padding-left: 36px;
+
+        background-position: 88.25% 59%;
       }
     }
   }

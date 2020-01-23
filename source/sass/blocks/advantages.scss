@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 29px;
 
-  background: url("../../img/bg-zigzag-line.svg") -5px top repeat-x;
+  background: url("../img/bg-zigzag-line.svg") -5px top repeat-x;
   background-size: auto 6px;
 }
 
@@ -31,30 +31,30 @@
   color: $black;
   white-space: pre-line;
 
-  background: 6px 2px no-repeat;
+  background: 10px 1px no-repeat;
 
   &--ecology {
-    background-image: url("../../img/icon-feature-flower.svg");
+    background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--price {
-    background-image: url("../../img/icon-feature-money.svg");
+    background-image: url("../img/icon-feature-money.svg");
   }
 
   &--like {
-    background-image: url("../../img/icon-feature-heart.svg");
+    background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--handmade {
-    background-image: url("../../img/icon-feature-ball.svg");
+    background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--home-product {
-    background-image: url("../../img/icon-feature-rocket.svg");
+    background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--present {
-    background-image: url("../../img/icon-feature-gift.svg");
+    background-image: url("../img/icon-feature-gift.svg");
   }
 
   &:nth-child(odd) {
@@ -98,7 +98,7 @@
     padding-top: 66px;
     padding-left: 45px;
 
-    background-position: left top;
+    background-position: -17px top;
     background-size: auto 15px;
   }
 
@@ -107,14 +107,14 @@
   }
 
   .advantages__list {
-    margin-top: 49px;
+    margin-top: 50px;
     margin-left: 4px;
   }
 
   .advantages__item {
     padding-top: 30px;
     padding-bottom: 60px;
-    padding-left: 7px;
+    padding-left: 10px;
 
     font-size: 20px;
     line-height: 22px;
@@ -127,7 +127,7 @@
     padding-left: 219px;
 
     background-size: 1050px 23px;
-    background-position: 50px 0;
+    background-position: 24px 0;
   }
 
   .advantages__list {
@@ -142,6 +142,10 @@
 
     &:nth-child(even) {
       background-position: 25px 2px;
+    }
+
+    &:nth-child(odd) {
+      padding-left: 3px;
     }
   }
 }

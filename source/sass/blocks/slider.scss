@@ -38,10 +38,10 @@
   padding: 0;
 
   @include button;
-  background: url("../../img/icon-left-arrow.svg") no-repeat center;
+  background: url("../img/icon-left-arrow.svg") no-repeat center;
 
   &--next {
-    background-image: url("../../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
   }
   cursor: pointer;
 
@@ -67,7 +67,7 @@
   .slider__list {
     padding: 0;
     margin-top: 49px;
-    padding-left: 4px;
+    padding-left: 5px;
 
     font-size: 17px;
   }
@@ -78,15 +78,17 @@
   }
 
   .slider__text {
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   .slider__author-name {
+    margin-left: 1px;
+
     font-size: 18px;
   }
 
   .slider__author-id {
-    margin-top: 2px;
+    margin-top: 4px;
     padding: 0;
 
     letter-spacing: 0;
@@ -122,6 +124,10 @@
     margin-bottom: 38px;
 
     white-space: pre-line;
+  }
+
+  .slider__author-name {
+    font-size: 17px;
   }
 
   .slider__author-id {
