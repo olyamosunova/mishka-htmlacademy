@@ -1,88 +1,98 @@
 .form-add {
-  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 267px;
+  margin: 29px 30px 40px;
 }
 
 .form-add__block {
-  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0 32px;
 }
 
-.form-add__text {
-  margin: 0;
-  margin-bottom: 37px;
+.form-add__choice {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
+  font-size: 15px;
   line-height: 30px;
-  text-align: center;
 }
 
 .form-add__label {
   width: 82px;
-  height: 52px;
-  padding: 12px 34px;
+  padding: 9px 0;
 
+  text-align: center;
   font-size: 17px;
-  line-height: 17px;
-  font-weight: $font-weight-bold;
 
-  border: 2px solid $color-border;
-
-  cursor: pointer;
-
-  &:hover {
-    border-color: $control-active;
-  }
+  border: 2px solid $gray;
 }
 
 .form-add__field:checked + .form-add__label {
   border-color: $color-secondary;
 }
 
-.form-add__button {
-  margin-top: 44px;
-  padding-top: 20px;
-  padding-bottom: 16px;
+.form-add__text {
+  margin: 0;
+  margin-bottom: 25px;
+}
 
-  color: $white;
+.form-add__title {
+  padding-top: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-add__button {
+  width: 100%;
+  padding: 20px 81px 16px;
+
   font-size: 17px;
   line-height: 17px;
+  color: $white;
 
-  background-color: $color-secondary;
   border: none;
-
-  cursor: pointer;
+  background-color: $color-secondary;
 }
 
 @media (min-width: $tablet-width) {
   .form-add {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    margin-top: 35px;
+    margin-right: 108px;
+    margin-left: 108px;
+  }
+
+  .form-add__title {
+    font-size: 30px;
+    line-height: 57px;
+
+    br {
+      display: none;
+    }
   }
 
   .form-add__block {
-    width: 350px;
+    margin-top: 13px;
+    margin-bottom: 30px;
   }
 
-  .form-add__choice {
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-start;
-    width: 100%;
-    margin-top: 22px;
+  .form-add__text {
+    margin-bottom: 21px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .form-add__label {
     width: 112px;
-    padding: 15px 48px;
-  }
 
-  .form-add__text {
-    margin: 0;
-    font-size: 17px;
-  }
-
-  .form-add__button {
-    width: 100%;
-    margin-top: 30px;
+    font-weight: $font-weight-bold;
   }
 }

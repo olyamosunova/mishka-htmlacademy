@@ -18,42 +18,19 @@
 }
 
 .modal__container {
+  width: 320px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 29px 30px 40px;
 
   background-color: $white;
   border: 1px solid $color-modal;
   box-shadow: 0 5px 10px 0 $color-shadow;
 }
 
-.modal__title {
-  padding-top: 0;
-
-  text-align: center;
-  text-transform: uppercase;
-}
-
 @media (min-width: $tablet-width) {
   .modal__container {
     width: 566px;
-    padding: 32px 105px 47px;
-  }
-
-  .modal__title {
-    font-size: 30px;
-    line-height: 57px;
-
-    br {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal__container {
-    padding-top: 35px;
   }
 }

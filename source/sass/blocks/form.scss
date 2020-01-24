@@ -135,6 +135,9 @@
     outline: none;
     border-color: $color-secondary;
   }
+
+  resize: none;
+  overflow: auto;
 }
 
 .form__info {

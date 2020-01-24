@@ -22,14 +22,13 @@
 }
 
 .advantages__item {
-  padding-top: 32px;
+  padding-top: 52px;
   padding-bottom: 30px;
 
   font-size: 17px;
   line-height: 20px;
   font-weight: $font-weight-bold;
   color: $black;
-  white-space: pre-line;
 
   background: 10px 1px no-repeat;
 
@@ -58,7 +57,7 @@
   }
 
   &:nth-child(odd) {
-    padding-top: 34px;
+    padding-top: 54px;
 
     order: -1;
   }
@@ -85,7 +84,7 @@
     width: 47%;
 
     &:nth-child(odd) {
-      padding-top: 30px;
+      padding-top: 52px;
       padding-left: 0;
 
       order: 0;
@@ -112,7 +111,7 @@
   }
 
   .advantages__item {
-    padding-top: 30px;
+    padding-top: 52px;
     padding-bottom: 60px;
     padding-left: 10px;
 

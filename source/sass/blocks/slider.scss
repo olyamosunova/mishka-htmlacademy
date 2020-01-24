@@ -10,6 +10,10 @@
 
   line-height: 30px;
   text-align: left;
+
+  br {
+    display: none;
+  }
 }
 
 .slider__author-name {
@@ -116,14 +120,16 @@
 
 @media (min-width: $desktop-width) {
   .slider__list {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 67px;
   }
 
   .slider__text {
     margin-bottom: 38px;
 
-    white-space: pre-line;
+    br {
+      display: block;
+    }
   }
 
   .slider__author-name {
