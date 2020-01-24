@@ -1,9 +1,11 @@
 .page-footer {
+  background-color: $gray;
+}
+
+.page-footer__container {
   display: flex;
   flex-direction: column;
   padding: 0 30px;
-
-  background-color: $gray;
 }
 
 .page-footer__logo {
@@ -21,15 +23,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 768px;
     min-height: 143px;
+    margin: 0 auto;
     padding: 0 50px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: 1150px;
   }
 }

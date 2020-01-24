@@ -1,5 +1,9 @@
 .page-header {
   width: auto;
+}
+
+.page-header__wrapper {
+  width: 100%;
   padding-top: 22px;
   position: relative;
 }
@@ -20,7 +24,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__wrapper {
+    width: 768px;
+    margin: 0 auto;
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
@@ -36,7 +42,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header__wrapper {
+    width: 1150px;
     position: relative;
   }
 

@@ -157,6 +157,10 @@
   font-size: 17px;
 }
 
+.form__control {
+  margin-top: 5px;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     position: relative;
@@ -164,7 +168,43 @@
     font-size: 19px;
   }
 
+  .form__container {
+    &:nth-child(even) {
+      margin-top: 49px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+
+      background-color: $gray;
+
+      .form__item {
+        margin-top: 0px;
+
+        &--email {
+          margin-top: 24px;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      padding-bottom: 38px;
+    }
+
+    &:last-of-type {
+      .form__item {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .form__control {
+    width: 768px;
+    margin: 26px auto 0;
+    position: relative;
+  }
+
   .form__title {
+    width: 768px;
+    margin: 0 auto;
     margin-top: 59px;
     padding: 0 50px;
     font-size: 17px;
@@ -189,32 +229,9 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 64px;
+    width: 768px;
+    margin: 64px auto 0;
     padding: 0 50px;
-
-    &--email {
-      margin-top: 0;
-      padding-bottom: 43px;
-
-      background-color: $gray;
-    }
-
-    &:nth-child(odd) {
-      margin-top: 50px;
-      padding-top: 49px;
-      padding-bottom: 25px;
-      background-color: $gray;
-
-      .form__legend {
-        margin-top: 13px;
-      }
-    }
-
-    &:last-of-type {
-      padding-top: 0;
-
-      background-color: transparent;
-    }
   }
 
   .form__input {
@@ -236,7 +253,7 @@
   }
 
   .form__icon {
-    top: 59px;
+    top: 10px;
     right: 77px;
 
     &--email {
@@ -264,7 +281,6 @@
 
   .form__submit {
     width: 230px;
-    margin-top: 23px;
     margin-bottom: 51px;
     margin-left: 50px;
   }
@@ -272,10 +288,12 @@
 
 @media (min-width: $desktop-width) {
   .form__item {
+    width: 1150px;
     padding-left: 112px;
   }
 
   .form__title {
+    width: 1150px;
     margin-top: 106px;
     padding: 0 225px;
   }
@@ -302,6 +320,11 @@
     margin-right: 175px;
     padding-top: 12px;
     padding-left: 16px;
+  }
+
+  .form__control {
+    width: 1150px;
+    margin-top: 30px;
   }
 
   .form__info {

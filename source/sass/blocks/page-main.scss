@@ -34,7 +34,8 @@
 .page-main__note {
   position: absolute;
   top: 20px;
-  right: 50px;
+  right: 0;
+  left: 0;
   margin: 0;
 
   opacity: 0;
@@ -42,6 +43,9 @@
 
 @media (min-width: $tablet-width) {
   .page-main__note {
+    width: 669px;
+    margin: 0 auto;
+    text-align: right;
     opacity: 1;
   }
 
@@ -88,5 +92,9 @@
         background-size: 1150px 746px;
       }
     }
+  }
+
+  .page-main__note {
+    width: 1050px;
   }
 }
