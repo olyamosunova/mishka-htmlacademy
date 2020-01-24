@@ -28,13 +28,22 @@
       background: $gray-title-bg url("../img/hero-mobile@2x.jpg") center -17px no-repeat;
       background-size: 575px 373px;
     }
+
+    &::after {
+      content: "";
+      width: 100%;
+      bottom: 0;
+      left: 0;
+
+      background-image: url("../img/big-zigzag-fill.svg");
+    }
   }
 }
 
 .page-main__note {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 50px;
   left: 0;
   margin: 0;
 
@@ -42,9 +51,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__container {
+    width: 100%;
+  }
+
   .page-main__note {
-    width: 669px;
-    margin: 0 auto;
     text-align: right;
     opacity: 1;
   }
@@ -75,6 +86,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
   .page-main__title {
     padding-top: 97px;
     padding-bottom: 117px;
@@ -96,5 +112,7 @@
 
   .page-main__note {
     width: 1050px;
+    margin: 0 auto;
+    right: 0;
   }
 }

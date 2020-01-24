@@ -197,14 +197,13 @@
   }
 
   .form__control {
-    width: 768px;
-    margin: 26px auto 0;
+    width: 100%;
+    margin-top: 26px;
     position: relative;
   }
 
   .form__title {
-    width: 768px;
-    margin: 0 auto;
+    width: 100%;
     margin-top: 59px;
     padding: 0 50px;
     font-size: 17px;
@@ -229,8 +228,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 768px;
-    margin: 64px auto 0;
+    width: 100%;
+    margin-top: 64px;
     padding: 0 50px;
   }
 
@@ -289,12 +288,14 @@
 @media (min-width: $desktop-width) {
   .form__item {
     width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 112px;
   }
 
   .form__title {
     width: 1150px;
-    margin-top: 106px;
+    margin: 106px auto 0;
     padding: 0 225px;
   }
 
@@ -324,7 +325,7 @@
 
   .form__control {
     width: 1150px;
-    margin-top: 30px;
+    margin: 30px auto 0;
   }
 
   .form__info {

@@ -27,9 +27,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 768px;
+    width: 100%;
     min-height: 143px;
-    margin: 0 auto;
     padding: 0 50px;
   }
 
@@ -41,5 +40,6 @@
 @media (min-width: $desktop-width) {
   .page-footer__container {
     width: 1150px;
+    margin: 0 auto;
   }
 }
