@@ -57,11 +57,10 @@
 
       white-space: normal;
 
-      background: url("../img/hero-tablet@1x.jpg") center top no-repeat,
-        transparent url("../img/bg-zigzag-fill.svg") left bottom repeat-x;
+      background: url("../img/hero-tablet@1x.jpg") center top no-repeat;
 
       @media (min-resolution: $retina-dppx) {
-        background: url("../img/hero-tablet@2x.jpg") center top no-repeat;
+        background-image: url("../img/hero-tablet@2x.jpg");
         background-size: 1150px 746px;
       }
     }
@@ -85,7 +84,7 @@
       background: $gray-title-bg url("../img/hero-desktop@1x.jpg") center 2px no-repeat;
 
       @media (min-resolution: $retina-dppx) {
-        background: $gray-title-bg url("../img/hero-desktop@2x.jpg") center 2px no-repeat;
+        background-image: url("../img/hero-desktop@2x.jpg");
         background-size: 1150px 746px;
       }
     }
