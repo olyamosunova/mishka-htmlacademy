@@ -30,11 +30,21 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    width: 141px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
-    margin-left: 78px;
-    margin-top: 35px;
+    margin-top: 14px;
+
+    transform: translateX(38px);
 
     border: none;
+  }
+
+  .social__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

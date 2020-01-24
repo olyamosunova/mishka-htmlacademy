@@ -24,11 +24,12 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 50px 57px 50px;
+    align-items: center;
+    min-height: 143px;
+    padding: 0 50px;
   }
 
   .page-footer__logo {
     display: block;
-    padding-top: 22px;
   }
 }
