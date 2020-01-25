@@ -31,6 +31,12 @@
   }
 }
 
+@media (width: $mobile-width) {
+  .page-main__container {
+    max-width: 320px;
+  }
+}
+
 .page-main__note {
   position: absolute;
   top: 20px;
