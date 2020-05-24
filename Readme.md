@@ -1,5 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+* Осень 2019
 * Студент: [Ольга Мосунова](https://up.htmlacademy.ru/adaptive/18/user/1162533).
 * Наставник: [Ксения Григорьева](https://htmlacademy.ru/profile/arctic_pie).
 
